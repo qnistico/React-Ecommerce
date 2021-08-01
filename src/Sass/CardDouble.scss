@@ -1,0 +1,17 @@
+.card-double {
+    width: 100%;
+    .card-double-flex {
+        display: flex;
+        max-width: 1400px;
+        margin: auto;
+        .card-double-body {
+            width: 50%;
+        }
+        .cdb1 {
+            margin-right: 15px;
+        }
+        .cdb2 {
+            margin-left: 15px;
+        }
+    }
+}

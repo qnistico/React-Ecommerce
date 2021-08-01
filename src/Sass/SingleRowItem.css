@@ -4,6 +4,7 @@
 
 .single-row-item img {
   width: 185px;
+  height: 130px;
   -o-object-fit: cover;
      object-fit: cover;
   margin-right: 10px;

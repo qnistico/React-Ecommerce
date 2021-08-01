@@ -1,6 +1,6 @@
 import React from 'react';
 import earphones1 from "./img/earphones1min.jpg";
-import earphones2 from "./img/earphones2nobg.png";
+import earphones2 from "./img/earphones2.jpg";
 import headphones1 from "./img/headphones1min.jpg";
 import headphones2 from "./img/headphones2min.jpg";
 import keyboard1 from "./img/keyboard1min.jpg";

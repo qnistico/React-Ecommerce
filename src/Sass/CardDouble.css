@@ -1,0 +1,24 @@
+.card-double {
+  width: 100%;
+}
+
+.card-double .card-double-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.card-double .card-double-flex .card-double-body {
+  width: 50%;
+}
+
+.card-double .card-double-flex .cdb1 {
+  margin-right: 15px;
+}
+
+.card-double .card-double-flex .cdb2 {
+  margin-left: 15px;
+}
+/*# sourceMappingURL=CardDouble.css.map */
