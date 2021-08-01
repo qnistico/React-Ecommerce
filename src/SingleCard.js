@@ -8,6 +8,7 @@ function SingleCard(props) {
                 <div className="singlecard-content">
                     <p>{props.sctop}</p>
                     <h3><span className="color">{props.scspan}</span>{props.sch3}</h3>
+                    <a href="#!" className="hero-button">View</a>
                 </div>
                 <img src={props.scimg} alt={props.scalt} />
             </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import AllProducts from './AllProducts';
 import BannerProductOne from './BannerProductOne';
 import CardDouble from './CardDouble';
 import Hero from "./Hero";
@@ -12,6 +13,7 @@ function LandingPage() {
             <RowItems />
             <BannerProductOne />
             <CardDouble />
+            <AllProducts />
         </div>
     )
 }

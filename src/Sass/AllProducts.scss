@@ -1,0 +1,13 @@
+.allproducts {
+    .allproducts-flex {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        max-width: 1400px;
+        margin: auto;
+        .product-card {
+            width: 25%;
+            min-width: 280px;
+        }
+    }
+}

@@ -56,7 +56,7 @@ function parallax() {
                     <div className="hero-text">
                     <p>Featured Lorem headphones for sale</p>
                     <h1>Experience pristine sound</h1>
-                    <a href="#!" className="hero-button">Learn More</a>
+                    <a href="/AllProducts" className="hero-button">View All Products</a>
                     </div>
                 </div>
                 </div>

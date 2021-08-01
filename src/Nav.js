@@ -6,6 +6,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 import PhoneIcon from "@material-ui/icons/Phone";
 import QueryBuilderIcon from "@material-ui/icons/QueryBuilder";
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 function Nav(props) {
   const [click, setClick] = useState(false);
@@ -97,7 +98,7 @@ function Nav(props) {
               </li>
               <li className="nav-item mobile_show">
                 <a
-                  className="nav-links reservations_mobile"
+                  className="nav-links cart_mobile"
                   href="/#contact-us"
                 >
                   
@@ -106,8 +107,8 @@ function Nav(props) {
             </ul>
             <ul className="nav-menu-2 mobile_hide">
               <li className="nav-item">
-                <a className="reservations" href="/#contact-us">
-                  
+                <a className="cart" href="/#contact-us">
+                  <ShoppingCartIcon />
                 </a>
               </li>
             </ul>

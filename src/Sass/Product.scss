@@ -1,0 +1,23 @@
+.productcard {
+    .productcard-body {
+        background-color: #fff;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        height: 100%;
+        box-shadow: 0 5px 24px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin: 10px;
+        .productcard-content {
+            .pcc-name {
+                margin: 10px 0;
+            }
+            .pcc-description {
+                margin-bottom: 10px;
+            }
+            .button-box {
+                padding-top: 20px;
+            }
+        }
+    }
+}

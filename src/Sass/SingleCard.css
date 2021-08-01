@@ -25,10 +25,15 @@
 .singlecard .singlecard-body .singlecard-content h3 {
   font-size: 36px;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .singlecard .singlecard-body .singlecard-content p {
   font-weight: 700;
+}
+
+.singlecard .singlecard-body .singlecard-content .hero-button {
+  padding: 10px 40px;
 }
 
 .singlecard .singlecard-body .singlecard-content .color {
@@ -37,6 +42,6 @@
 
 .singlecard .singlecard-body img {
   width: 100%;
-  max-height: 450px;
+  max-height: 340px;
 }
 /*# sourceMappingURL=SingleCard.css.map */

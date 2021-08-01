@@ -7,6 +7,7 @@ import {
   Link
 } from "react-router-dom";
 import LandingPage from "./LandingPage";
+import AllProducts from './AllProducts';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         <Switch>
           <Route exact path="/">
             <LandingPage />
+          </Route>
+          <Route exact path="/AllProducts">
+            <AllProducts />
           </Route>
       </Switch>
       </Router>

@@ -1,8 +1,9 @@
 import React from "react";
 import "./Sass/CardDouble.scss";
 import SingleCard from "./SingleCard";
-import speaker1 from "./img/speaker1nobgcrop.png";
-import wtf from "./img/mouse1nobg.png";
+import speaker1 from "./img/speaker2nobgcrop.png";
+import earphones from "./img/earphones2nobg.png";
+import mouse1 from "./img/mouse3nobgcrop.png";
 
 function CardDouble(props) {
   return (
@@ -23,7 +24,7 @@ function CardDouble(props) {
           sctop="ZRX Parts"
           scspan="Computer Parts. "
           sch3="Mice & Keyboards"
-          scimg={wtf}
+          scimg={mouse1}
           scalt="speaker"
         />
         </div>
