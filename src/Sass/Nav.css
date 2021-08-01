@@ -1,0 +1,385 @@
+.topnav {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  background-color: #fff;
+  z-index: 5;
+  border-bottom: 1px solid #f1f2f5;
+}
+
+.topnav .topnav-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.topnav .topnav-flex .topnav-flex-item {
+  color: #333;
+  padding: 5px 0;
+  font-size: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topnav .topnav-flex .topnav-flex-item a {
+  text-decoration: none;
+}
+
+.topnav .topnav-flex .topnav-flex-item .MuiSvgIcon-root {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #e0bc75;
+}
+
+.topnav .topnav-flex .topnav-social .MuiSvgIcon-root {
+  color: #333;
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+.navbar {
+  background-color: transparent;
+  height: 60px;
+  width: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  z-index: 9999;
+  margin: auto;
+}
+
+.nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  max-width: 1400px;
+}
+
+.nav-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  width: 200px;
+  cursor: pointer;
+}
+
+.nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.nav-menu-2 {
+  padding-left: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.nav-links {
+  color: #333;
+  text-decoration: none;
+  padding: 12px 18px;
+  font-size: 16px !important;
+  font-family: "Jost", sans-serif;
+  font-weight: 400 !important;
+  height: 100%;
+  -webkit-transition: all 0.23s ease-in;
+  transition: all 0.23s ease-in;
+}
+
+.nav-icon {
+  display: none;
+}
+
+.nav-item {
+  margin-right: 1rem;
+}
+
+.nav-item .active {
+  color: #0073e5;
+}
+
+.reservations {
+  color: #e0bc75 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.reservations .MuiSvgIcon-root {
+  margin-right: 8px;
+  font-size: 40px;
+}
+
+.fix-nav {
+  position: fixed;
+  background-color: #fff;
+  height: 60px;
+  width: 100%;
+  -webkit-box-shadow: 0 7px 6px -6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 7px 6px -6px rgba(0, 0, 0, 0.23);
+  -webkit-transition: height 0.5s ease, color 0s, background-color 0s !important;
+  transition: height 0.5s ease, color 0s, background-color 0s !important;
+  top: 0;
+}
+
+.fix-nav .nav-links {
+  color: #333 !important;
+}
+
+.mobile_show {
+  display: none;
+}
+
+.dropdown_item {
+  color: #1a1a1a;
+  -webkit-transition: all 0.23s ease-in;
+  transition: all 0.23s ease-in;
+}
+
+.dropdown_item:hover {
+  background-color: #0073e5 !important;
+  color: white !important;
+}
+
+.menu-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+}
+
+.menu-trigger {
+  background-color: transparent !important;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  vertical-align: middle;
+  -webkit-transition: -webkit-box-shadow 0.4s ease;
+  transition: -webkit-box-shadow 0.4s ease;
+  transition: box-shadow 0.4s ease;
+  transition: box-shadow 0.4s ease, -webkit-box-shadow 0.4s ease;
+  margin-left: auto;
+}
+
+.menu-trigger span {
+  font-size: 16px !important;
+  height: 48px;
+}
+
+.dropdown_container {
+  padding: 0 !important;
+}
+
+.dropdown_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  padding: 12px 18px;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  height: 100%;
+}
+
+.dropdown_content {
+  z-index: 9999 !important;
+  position: relative;
+}
+
+.menu {
+  background: #ffffff;
+  border-radius: 0;
+  position: absolute;
+  top: 0;
+  width: 300px;
+  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  -webkit-transition: opacity 0.4s ease, visibility 0.4s, -webkit-transform 0.4s ease;
+  transition: opacity 0.4s ease, visibility 0.4s, -webkit-transform 0.4s ease;
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s, -webkit-transform 0.4s ease;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  border-bottom: 1px solid #dddddd;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333333;
+  padding: 15px 20px;
+  display: block;
+}
+
+.menu.active {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+@media screen and (max-width: 900px) {
+  .fix_nav {
+    height: 75px;
+  }
+  .fix_nav .nav-icon {
+    color: white;
+  }
+  .navbar .mobile_hide {
+    display: none;
+  }
+  .mobile_show {
+    display: block;
+  }
+  .nav-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding-left: 0;
+    position: absolute;
+    top: 59px;
+    left: -110%;
+    opacity: 1;
+    background-color: #261e1c !important;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .nav-menu .nav-links {
+    color: #ad985f !important;
+  }
+  .nav-menu.active {
+    background: white;
+    left: 0px;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+  .nav-links {
+    color: #1a1a1a;
+    width: 100%;
+    display: table;
+  }
+  .signup_button_mobile .MuiSvgIcon-root {
+    margin-right: 8px;
+    vertical-align: top;
+    color: #ad985f !important;
+  }
+  .nav-icon {
+    display: block;
+    position: absolute;
+    top: -18.5px;
+    right: 0;
+    -webkit-transform: translate(-100%, 60%);
+            transform: translate(-100%, 60%);
+    font-size: 32px;
+    cursor: pointer;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .topnav {
+    display: none;
+  }
+  .navbar {
+    top: 0;
+  }
+}
+/*# sourceMappingURL=Nav.css.map */

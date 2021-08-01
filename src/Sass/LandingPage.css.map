@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAC;EACV,OAAO,EAAE,MAAM;CAClB",
+    "sources": [
+        "LandingPage.scss"
+    ],
+    "names": [],
+    "file": "LandingPage.css"
+}

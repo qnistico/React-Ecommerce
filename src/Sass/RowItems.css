@@ -1,0 +1,23 @@
+.row-items {
+  padding: 30px 0;
+}
+
+.row-items h2 {
+  margin-bottom: 15px;
+}
+
+.row-items .row-items-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  overflow-x: scroll;
+}
+
+.row-items .row-items-flex::-webkit-scrollbar {
+  display: none;
+}
+/*# sourceMappingURL=RowItems.css.map */
