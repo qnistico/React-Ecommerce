@@ -3,4 +3,9 @@
     h1 {
         margin-bottom: 10px;
     }
+    .cart-bottom {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1000px;
+    }
 }

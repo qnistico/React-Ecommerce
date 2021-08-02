@@ -1,67 +1,78 @@
-import React from 'react';
+import React from "react";
 import heroimgnobg from "./img/heroimgnobgmin.png";
 import "./Sass/Hero.scss";
 import { ParallaxProvider } from "react-scroll-parallax";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function Hero() {
-  window.addEventListener("load", parallax)
-window.addEventListener("scroll", parallax)
+  window.addEventListener("load", parallax);
+  window.addEventListener("scroll", parallax);
 
-function parallax() {
-
+  function parallax() {
     function getPosition(item) {
+      let top = (
+        (item.getBoundingClientRect().top / window.innerHeight) *
+        100
+      ).toFixed(2);
 
-        let top = (item.getBoundingClientRect().top / window.innerHeight * 100).toFixed(2)
-
-        return top
+      return top;
     }
 
-    let itemsToParallax = document.getElementsByClassName("parallaxify")
+    let itemsToParallax = document.getElementsByClassName("parallaxify");
 
     for (let item of itemsToParallax) {
+      if (!item.dataset.speedMultiplier) {
+        item.dataset.speedMultiplier = "0.7";
+      }
 
-        if (!item.dataset.speedMultiplier) {
-
-            item.dataset.speedMultiplier = "0.7"
-        }
-
-        item.style.transform = "translate3d(0, " + getPosition(item) * item.dataset.speedMultiplier + "px, 0)"
+      item.style.transform =
+        "translate3d(0, " +
+        getPosition(item) * item.dataset.speedMultiplier +
+        "px, 0)";
     }
 
-    let imagesToParallax = document.getElementsByClassName("parallaxifyBg")
+    let imagesToParallax = document.getElementsByClassName("parallaxifyBg");
 
     for (let item of imagesToParallax) {
+      function getPosition(item) {
+        let top = (
+          (item.getBoundingClientRect().top / window.innerHeight) *
+          100
+        ).toFixed(2);
 
-        function getPosition(item) {
+        return top;
+      }
 
-            let top = (item.getBoundingClientRect().top / window.innerHeight * 100).toFixed(2)
+      if (!item.dataset.speedMultiplier) {
+        item.dataset.speedMultiplier = "3";
+      }
 
-            return top
-        }
-
-        if (!item.dataset.speedMultiplier) {
-
-            item.dataset.speedMultiplier = "3"
-        }
-
-        item.style.backgroundAttachment = "fixed"
-        item.style.backgroundPositionY = getPosition(item) * item.dataset.speedMultiplier + "px"
+      item.style.backgroundAttachment = "fixed";
+      item.style.backgroundPositionY =
+        getPosition(item) * item.dataset.speedMultiplier + "px";
     }
-}
-    return (
-        <div className="hero">
-            <div className="hero-flex">
-                <div className="hero-content">
-                        <img src={heroimgnobg} alt="" className="parallaxify" data-speed-multiplier="-1.618" />
-                    <div className="hero-text">
-                    <p>Featured Lorem headphones for sale</p>
-                    <h1>Experience pristine sound</h1>
-                    <a href="/AllProducts" className="hero-button">View All Products</a>
-                    </div>
-                </div>
-                </div>
+  }
+  return (
+    <div className="hero">
+      <div className="hero-flex">
+        <div className="hero-content">
+          <img
+            src={heroimgnobg}
+            alt=""
+            className="parallaxify"
+            data-speed-multiplier="-1.618"
+          />
+          <div className="hero-text">
+            <p>Featured Lorem headphones for sale</p>
+            <h1>Experience pristine sound</h1>
+            <Link to="/AllProducts">
+                <button className="hero-button">View All Products</button>
+            </Link>
+          </div>
         </div>
-    )
+      </div>
+    </div>
+  );
 }
 
-export default Hero
+export default Hero;

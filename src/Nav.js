@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import { useHistory } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import "./Sass/Nav.scss";
 import MenuIcon from "@material-ui/icons/Menu";
 import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 import PhoneIcon from "@material-ui/icons/Phone";
 import QueryBuilderIcon from "@material-ui/icons/QueryBuilder";
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function Nav({ totalItems }) {
   const [click, setClick] = useState(false);
@@ -29,7 +29,8 @@ function Nav({ totalItems }) {
 
   window.addEventListener("scroll", fixHeaderOnScoll);
   const [show, handleShow] = useState(false);
-  const history = useHistory();
+
+  const location = useLocation();
 
   return (
     <div>
@@ -105,14 +106,19 @@ function Nav({ totalItems }) {
                 </a>
               </li>
             </ul>
+            
             <ul className="nav-menu-2 mobile_hide">
+              <Link to="/Cart">
               <li className="nav-item">
-                <a className="nav-cart" href="/Cart">
+                <div className="nav-cart">
+                   
                   <ShoppingCartIcon />
                   <div className="cart-badge">{totalItems}</div>
-                </a>
+                </div>
               </li>
+              </Link>
             </ul>
+                  
             <div className="nav-icon" onClick={handleClick}>
               <MenuIcon />
             </div>

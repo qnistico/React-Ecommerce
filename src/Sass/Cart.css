@@ -5,4 +5,14 @@
 .cart h1 {
   margin-bottom: 10px;
 }
+
+.cart .cart-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1000px;
+}
 /*# sourceMappingURL=Cart.css.map */

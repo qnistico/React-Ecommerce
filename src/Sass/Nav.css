@@ -170,8 +170,9 @@
 }
 
 .nav-cart .cart-badge {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
+  font-family: 'Roboto', sans-serif;
   width: 20px;
   height: 20px;
   color: #fff;
@@ -195,9 +196,9 @@
   background-color: #e6e6e6;
 }
 
-.cart .MuiSvgIcon-root {
+.nav-cart .MuiSvgIcon-root {
   margin-right: 8px;
-  font-size: 40px;
+  font-size: 32px;
 }
 
 .fix-nav {

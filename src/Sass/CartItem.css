@@ -2,8 +2,9 @@
   width: 100%;
   max-width: 1000px;
   margin-bottom: 20px;
-  -webkit-box-shadow: 0 5px 12px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 5px 12px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 5px 12px rgba(0, 0, 0, 0.03);
+          box-shadow: 0 5px 12px rgba(0, 0, 0, 0.03);
+  border: 1px solid #f1f2f5;
 }
 
 .cartitem .cartitem-flex {
@@ -52,5 +53,35 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cartitem .cartitem-flex .cartitem-content .cartitem-plusminus-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cartitem .cartitem-flex .cartitem-content .cartitem-plusminus-buttons .minus-button, .cartitem .cartitem-flex .cartitem-content .cartitem-plusminus-buttons .plus-button {
+  width: 40px;
+  height: 40px;
+  font-size: 19px;
+  padding: 5px;
+  background-color: #fff;
+  border: 1px solid #d1d1d1;
+  margin: 8px;
+}
+
+.cartitem .cartitem-flex .cartitem-content .remove-button {
+  padding: 12px 20px;
+  background-color: #f10e0e;
+  border: 1px solid #f10e0e;
+  color: #fff;
+  cursor: pointer;
 }
 /*# sourceMappingURL=CartItem.css.map */
