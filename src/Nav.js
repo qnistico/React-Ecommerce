@@ -107,7 +107,7 @@ function Nav({ totalItems }) {
             </ul>
             <ul className="nav-menu-2 mobile_hide">
               <li className="nav-item">
-                <a className="cart" href="/#contact-us">
+                <a className="nav-cart" href="/Cart">
                   <ShoppingCartIcon />
                   <div className="cart-badge">{totalItems}</div>
                 </a>

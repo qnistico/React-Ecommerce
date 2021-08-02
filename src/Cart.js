@@ -1,7 +1,8 @@
 import React from "react";
+import CartItem from "./CartItem";
+import "./Sass/Cart.scss";
 
 const Cart = ({ cart }) => {
-  const isEmpty = !cart.line_items.length;
 
   const EmptyCart = () => <div mode="subtitle1">No items in cart.</div>;
 
@@ -9,22 +10,28 @@ const Cart = ({ cart }) => {
     <>
       <div>
         {cart.line_items.map((item) => (
-          <div className="wtf" item key={item.id}>
-            <div className="cart-item">{item.name}</div>
+          <div key={item.id}>
+              <CartItem item={item} />
           </div>
         ))}
       </div>
       <div className="cart-details">
         Subtotal: {cart.subtotal.formatted_width_symbol}
-        <button className="emptyButton" type="button">Empty Cart</button>
-        <button className="checkoutButton" type="button">Empty Cart</button>
+        <button className="emptyButton" type="button">
+          Empty cart
+        </button>
+        <button className="checkoutButton" type="button">
+          Go to checkout
+        </button>
       </div>
     </>
   );
+
+  if(!cart.line_items) return 'Loading...';
   return (
     <div className="cart">
-      <h3 className="cart-header">Shopping Cart</h3>
-      {isEmpty ? <EmptyCart /> : <CartAdded />}
+      <h1 className="cart-header">Shopping Cart</h1>
+      {!cart.line_items.length ? <EmptyCart /> : <CartAdded />}
     </div>
   );
 };

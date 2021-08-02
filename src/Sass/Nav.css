@@ -154,7 +154,7 @@
   color: #0073e5;
 }
 
-.cart {
+.nav-cart {
   color: #333 !important;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -169,7 +169,7 @@
   transition: all 0.3s ease;
 }
 
-.cart .cart-badge {
+.nav-cart .cart-badge {
   font-size: 13px;
   font-weight: 700;
   width: 20px;
@@ -191,7 +191,7 @@
           align-items: center;
 }
 
-.cart:hover {
+.nav-cart:hover {
   background-color: #e6e6e6;
 }
 

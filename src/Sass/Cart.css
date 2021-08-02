@@ -1,1 +1,8 @@
-/* No CSS *//*# sourceMappingURL=Cart.css.map */
+.cart {
+  padding: 100px 30px;
+}
+
+.cart h1 {
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=Cart.css.map */

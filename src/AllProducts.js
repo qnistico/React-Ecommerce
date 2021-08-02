@@ -13,8 +13,6 @@ import SingleRowItem from "./SingleRowItem";
 import "./Sass/AllProducts.scss";
 
 const AllProducts = ({ products, onAddToCart }) => {
-  
-  
   return (
     <div className="allproducts">
       <div className="allproducts-flex">
@@ -26,6 +24,6 @@ const AllProducts = ({ products, onAddToCart }) => {
       </div>
     </div>
   );
-}
+};
 
 export default AllProducts;
