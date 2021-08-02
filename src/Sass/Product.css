@@ -11,6 +11,17 @@
           justify-content: center;
   height: 100%;
   margin: 10px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.158);
+          box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.158);
+}
+
+.productcard .productcard-body img {
+  max-height: 200px;
+}
+
+.productcard .productcard-body .productcard-content {
+  padding: 20px;
 }
 
 .productcard .productcard-body .productcard-content .pcc-name {

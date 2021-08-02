@@ -5,7 +5,13 @@
         justify-content: center;
         height: 100%;
         margin: 10px;
+        background-color: #fff;
+        box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.158);
+        img {
+            max-height: 200px;
+        }
         .productcard-content {
+            padding: 20px;
             .pcc-name {
                 margin: 12px 0 8px 0;
                 font-weight: 700;

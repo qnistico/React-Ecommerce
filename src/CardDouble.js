@@ -2,8 +2,7 @@ import React from "react";
 import "./Sass/CardDouble.scss";
 import SingleCard from "./SingleCard";
 import speaker1 from "./img/speaker2nobgcrop.png";
-import earphones from "./img/earphones2nobg.png";
-import mouse1 from "./img/mouse3nobgcrop.png";
+import mouse1 from "./img/mouse2nobg.png";
 
 function CardDouble(props) {
   return (
