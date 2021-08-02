@@ -12,7 +12,7 @@ import mouse2 from "./img/mouse2.jpg";
 import SingleRowItem from "./SingleRowItem";
 import "./Sass/AllProducts.scss";
 
-const AllProducts = ({ products }) => {
+const AllProducts = ({ products, onAddToCart }) => {
   
   
   return (
@@ -20,7 +20,7 @@ const AllProducts = ({ products }) => {
       <div className="allproducts-flex">
         {products.map((product) => (
           <div className="product-card" key={product.id}>
-            <Product product={product} />
+            <Product product={product} onAddToCart={onAddToCart} />
           </div>
         ))}
       </div>

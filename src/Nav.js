@@ -8,7 +8,7 @@ import PhoneIcon from "@material-ui/icons/Phone";
 import QueryBuilderIcon from "@material-ui/icons/QueryBuilder";
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
-function Nav(props) {
+function Nav({ totalItems }) {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
@@ -109,6 +109,7 @@ function Nav(props) {
               <li className="nav-item">
                 <a className="cart" href="/#contact-us">
                   <ShoppingCartIcon />
+                  <div className="cart-badge">{totalItems}</div>
                 </a>
               </li>
             </ul>

@@ -2,8 +2,9 @@ import React from 'react';
 import "./Sass/Product.scss";
 import StarIcon from '@material-ui/icons/Star';
 import StarHalfIcon from '@material-ui/icons/StarHalf';
+import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 
-const Product = ({ product }) => {
+const Product = ({ product, onAddToCart }) => {
     return (
         <div className="productcard">
             <div className="productcard-body">
@@ -20,7 +21,7 @@ const Product = ({ product }) => {
                 </div>
                 <p className="pcc-price"><span className="from">from </span>{product.price.formatted_with_symbol}</p>
                 
-                <button  className="hero-button">Add</button>
+                <button  className="add-to-cart" onClick={() => onAddToCart(product.id, 1)}><AddShoppingCartIcon /></button>
 
                 </div>
             </div>

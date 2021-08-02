@@ -38,8 +38,13 @@
                 font-size: 14px;
                 font-weight: 400;
             }
-            .hero-button {
-                padding: 8px 30px;
+            .add-to-cart {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                .MuiSvgIcon-root {
+                    font-size: 28px;
+                }
             }
         }
     }

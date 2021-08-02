@@ -56,7 +56,13 @@
   font-weight: 400;
 }
 
-.productcard .productcard-body .productcard-content .hero-button {
-  padding: 8px 30px;
+.productcard .productcard-body .productcard-content .add-to-cart {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.productcard .productcard-body .productcard-content .add-to-cart .MuiSvgIcon-root {
+  font-size: 28px;
 }
 /*# sourceMappingURL=Product.css.map */
