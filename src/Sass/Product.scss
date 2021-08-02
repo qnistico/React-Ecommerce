@@ -23,9 +23,12 @@
                 color: #566177;
             }
             .pcc-price {
-                margin-bottom: 10px;
                 font-size: 17.6px;
                 font-weight: 700;
+            }
+            .productcard-bottom {
+                display: flex;
+                justify-content: space-between;
             }
             .stars {
                 margin-bottom: 4px;

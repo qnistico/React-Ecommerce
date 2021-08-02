@@ -164,17 +164,22 @@
           align-items: center;
   text-decoration: none;
   position: relative;
+  padding: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .cart .cart-badge {
-  font-size: 12px;
-  width: 17px;
-  height: 17px;
+  font-size: 13px;
+  font-weight: 700;
+  width: 20px;
+  height: 20px;
+  color: #fff;
   position: absolute;
   right: 0;
   top: 0;
   border-radius: 100px;
-  background-color: #ff9100;
+  background-color: #0073e5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,6 +189,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.cart:hover {
+  background-color: #e6e6e6;
 }
 
 .cart .MuiSvgIcon-root {
