@@ -5,6 +5,7 @@ import Nav from "./Nav";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import LandingPage from "./LandingPage";
 import AllProducts from "./AllProducts";
+import Cart from "./Cart";
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -43,6 +44,9 @@ const App = () => {
           </Route>
           <Route exact path="/AllProducts">
             <AllProducts products={products} onAddToCart={handleAddToCart} />
+          </Route>
+          <Route exact path="/Cart">
+            <Cart cart={cart} />
           </Route>
         </Switch>
       </Router>
