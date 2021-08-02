@@ -23,7 +23,8 @@
 }
 
 .singlecard .singlecard-body .singlecard-content h3 {
-  font-size: 36px;
+  font-size: 24px;
+  font-weight: 700;
   margin-top: 20px;
   margin-bottom: 40px;
 }
@@ -38,10 +39,12 @@
 
 .singlecard .singlecard-body .singlecard-content .color {
   color: #2196f3;
+  font-size: 36px;
+  font-weight: 800;
 }
 
 .singlecard .singlecard-body img {
   width: 100%;
-  max-height: 340px;
+  max-height: 225px;
 }
 /*# sourceMappingURL=SingleCard.css.map */

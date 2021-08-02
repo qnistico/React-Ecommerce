@@ -1,9 +1,11 @@
 .allproducts {
+    width: 100%;
+
     .allproducts-flex {
         display: flex;
-        flex-flow: row wrap;
         justify-content: center;
-        max-width: 1400px;
+        flex-flow: row wrap;
+        max-width: 1280px;
         margin: auto;
         .product-card {
             width: 25%;

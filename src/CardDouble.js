@@ -10,16 +10,24 @@ function CardDouble(props) {
     <div className="card-double">
       <div className="card-double-flex">
         <div className="card-double-body cdb1">
-        <SingleCard
-          sctop="XM4 Speakers"
-          scspan="Excellent sound. "
-          sch3="Headphones & Speakers"
-          scimg={speaker1}
-          scalt="speaker"
-        />
+          <SingleCard
+            sctop="XM4 Speakers"
+            scspan="Excellent sound. "
+            sch3="Headphones & Speakers"
+            scimg={speaker1}
+            scalt="speaker"
+          />
         </div>
         <div className="card-double-body cdb2">
-
+          <SingleCard
+            sctop="ZRX Parts"
+            scspan="Computer Parts. "
+            sch3="Mice & Keyboards"
+            scimg={mouse1}
+            scalt="speaker"
+          />
+        </div>
+        <div className="card-double-body cdb3">
         <SingleCard
           sctop="ZRX Parts"
           scspan="Computer Parts. "

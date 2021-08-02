@@ -13,7 +13,6 @@ function LandingPage() {
             <RowItems />
             <BannerProductOne />
             <CardDouble />
-            <AllProducts />
         </div>
     )
 }
