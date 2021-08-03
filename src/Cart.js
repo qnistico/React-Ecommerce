@@ -20,22 +20,30 @@ const Cart = ({
       <div>
         {cart.line_items.map((item) => (
           <div key={item.id}>
-            <CartItem item={item} onUpdateCartQty={handleUpdateCartQty} onRemoveFromCart={handleRemoveFromCart} />
+            <CartItem
+              item={item}
+              onUpdateCartQty={handleUpdateCartQty}
+              onRemoveFromCart={handleRemoveFromCart}
+            />
           </div>
         ))}
       </div>
       <div className="cart-bottom">
-          <p className="subtotal">
-        Subtotal: {cart.subtotal.formatted_with_symbol}
+        <p className="subtotal">
+          Subtotal: {cart.subtotal.formatted_with_symbol}
         </p>
         <div>
-          <button className="empty-cart-button" type="button" onClick={handleEmptyCart}>
+          <button
+            className="empty-cart-button"
+            type="button"
+            onClick={handleEmptyCart}
+          >
             Empty cart
           </button>
           <Link to="/Checkout">
-          <button className="checkout-button" type="button">
-            Go to checkout
-          </button>
+            <button className="checkout-button" type="button">
+              Go to checkout
+            </button>
           </Link>
         </div>
       </div>

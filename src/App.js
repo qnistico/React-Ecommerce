@@ -73,7 +73,7 @@ const App = () => {
             />
           </Route>
           <Route exact path="/ProductDetails">
-            <ProductDetails />
+            <ProductDetails onAddToCart={handleAddToCart} />
           </Route>
           <Route exact path="/Checkout">
             <Checkout />

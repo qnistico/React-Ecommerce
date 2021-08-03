@@ -40,7 +40,19 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 20px;
+}
+
+.pdctdetails .pdctdetails-flex .pdctdetails-content .stars .stars-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .pdctdetails .pdctdetails-flex .pdctdetails-content .stars p {
@@ -56,7 +68,6 @@
 
 .pdctdetails .pdctdetails-flex .pdctdetails-content .stars .items-sold {
   color: #f10e0e;
-  margin-left: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,6 +89,10 @@
   font-size: 14px;
 }
 
+.pdctdetails .pdctdetails-flex .pdctdetails-content .pdctdetails-info {
+  margin-bottom: 20px;
+}
+
 .pdctdetails .pdctdetails-flex .pdctdetails-content .pdctdetails-info .pdct-price {
   font-size: 24px;
   font-weight: 800;
@@ -86,5 +101,13 @@
 
 .pdctdetails .pdctdetails-flex .pdctdetails-content .pdctdetails-info .pdct-details {
   font-size: 14px;
+}
+
+.pdctdetails .pdctdetails-flex .pdctdetails-content .pdctdetails-add .add-to-cart {
+  padding: 12px 20px;
+  background-color: #0073e5;
+  color: #fff;
+  border: 1px solid #0073e5;
+  font-weight: 700;
 }
 /*# sourceMappingURL=ProductDetails.css.map */

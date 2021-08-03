@@ -12,7 +12,7 @@ import StarIcon from "@material-ui/icons/Star";
 import StarHalfIcon from "@material-ui/icons/StarHalf";
 import WhatshotIcon from "@material-ui/icons/Whatshot";
 
-function ProductDetails(props) {
+function ProductDetails({ product, onAddToCart }) {
   const productDetails = [
     {
       title: "Earphones",
@@ -65,12 +65,14 @@ function ProductDetails(props) {
           <h1>{pdctItem.title}</h1>
           <div className="pdctdetails-reviews">
             <div className="stars">
+                <div className="stars-flex">
               <StarIcon />
               <StarIcon />
               <StarIcon />
               <StarIcon />
               <StarIcon />
               <p>No reviews</p>
+              </div>
               <div>
                 <p className="items-sold">
                   <WhatshotIcon /> 5 sold in the last 24 hours
@@ -86,6 +88,12 @@ function ProductDetails(props) {
           <div className="pdctdetails-info">
             <p className="pdct-price">{pdctItem.price}</p>
             <p className="pdct-details">{pdctItem.details}</p>
+          </div>
+          <div className="pdctdetails-add">
+            <button
+              className="add-to-cart"
+              onClick={() => onAddToCart(product.id, 1)}
+            >Add to Cart</button>
           </div>
         </div>
       </div>
