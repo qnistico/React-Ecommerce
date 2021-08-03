@@ -11,6 +11,8 @@ import "./Sass/ProductDetails.scss";
 import StarIcon from "@material-ui/icons/Star";
 import StarHalfIcon from "@material-ui/icons/StarHalf";
 import WhatshotIcon from "@material-ui/icons/Whatshot";
+import ReactImageMagnify from 'react-image-magnify';
+
 
 function ProductDetails({ product, onAddToCart }) {
   const productDetails = [
@@ -60,7 +62,19 @@ function ProductDetails({ product, onAddToCart }) {
   return (
     <div className="pdctdetails">
       <div className="pdctdetails-flex">
-        <img src={pdctItem.img} alt="" id="featuredimg" />
+          <div className="img-container">
+      <ReactImageMagnify fadeDurationInMs="0" hoverDelayInMs="0" {...{
+    smallImage: {
+        isFluidWidth: true,
+        src: pdctItem.img
+    },
+    largeImage: {
+        src: pdctItem.img,
+        width: 1200,
+        height: 1200
+    }
+}} />
+</div>
         <div className="pdctdetails-content">
           <h1>{pdctItem.title}</h1>
           <div className="pdctdetails-reviews">
