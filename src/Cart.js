@@ -12,7 +12,7 @@ const Cart = ({
   const EmptyCart = () => (
     <div>
       <p>No items in cart.</p>
-      <Link to="/">Back to Shop</Link>
+      <Link to="/AllProducts">Back to Shop</Link>
     </div>
   );
   const CartAdded = () => (
@@ -25,14 +25,18 @@ const Cart = ({
         ))}
       </div>
       <div className="cart-bottom">
+          <p className="subtotal">
         Subtotal: {cart.subtotal.formatted_with_symbol}
+        </p>
         <div>
-          <button className="emptyButton" type="button" onClick={handleEmptyCart}>
+          <button className="empty-cart-button" type="button" onClick={handleEmptyCart}>
             Empty cart
           </button>
-          <button className="checkoutButton" type="button">
+          <Link to="/Checkout">
+          <button className="checkout-button" type="button">
             Go to checkout
           </button>
+          </Link>
         </div>
       </div>
     </>

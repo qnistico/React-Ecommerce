@@ -10,21 +10,39 @@ import mouse1 from "./img/mouse1.jpg";
 import mouse2 from "./img/mouse2.jpg";
 import SingleRowItem from "./SingleRowItem";
 import "./Sass/RowItems.scss";
+import { useHistory } from "react-router-dom";
 
 function RowItems(props) {
+  const history = useHistory();
   return (
     <div className="row-items">
       <h2>Scroll through our products</h2>
       <div className="row-items-flex">
-        <SingleRowItem srimg={earphones1} srtitle="Headphones" />
-        <SingleRowItem srimg={earphones2} srtitle="Headphones" />
+        <div onClick={() => history.push("/ProductDetails?Id=1")}>
+          <SingleRowItem srimg={earphones1} srtitle="Headphones" />
+        </div>
+        <div>
+          <SingleRowItem srimg={earphones2} srtitle="Headphones" />
+        </div>
 
-        <SingleRowItem srimg={keyboard1} srtitle="Headphones" />
-        <SingleRowItem srimg={keyboard2} srtitle="Headphones" />
-        <SingleRowItem srimg={lamp1} srtitle="Headphones" />
-        <SingleRowItem srimg={lamp2} srtitle="Headphones" />
-        <SingleRowItem srimg={mouse1} srtitle="Headphones" />
-        <SingleRowItem srimg={mouse2} srtitle="Headphones" />
+        <div>
+          <SingleRowItem srimg={keyboard1} srtitle="Headphones" />
+        </div>
+        <div>
+          <SingleRowItem srimg={keyboard2} srtitle="Headphones" />
+        </div>
+        <div>
+          <SingleRowItem srimg={lamp1} srtitle="Headphones" />
+        </div>
+        <div>
+          <SingleRowItem srimg={lamp2} srtitle="Headphones" />
+        </div>
+        <div>
+          <SingleRowItem srimg={mouse1} srtitle="Headphones" />
+        </div>
+        <div>
+          <SingleRowItem srimg={mouse2} srtitle="Headphones" />
+        </div>
       </div>
     </div>
   );

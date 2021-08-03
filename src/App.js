@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import LandingPage from "./LandingPage";
 import AllProducts from "./AllProducts";
 import Cart from "./Cart";
+import Checkout from "./Checkout";
+import ProductDetails from "./ProductDetails";
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -69,6 +71,12 @@ const App = () => {
               handleRemoveFromCart={handleRemoveFromCart}
               handleEmptyCart={handleEmptyCart}
             />
+          </Route>
+          <Route exact path="/ProductDetails">
+            <ProductDetails />
+          </Route>
+          <Route exact path="/Checkout">
+            <Checkout />
           </Route>
         </Switch>
       </Router>

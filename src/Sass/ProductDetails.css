@@ -1,0 +1,90 @@
+.pdctdetails {
+  width: 100%;
+  padding-top: 100px;
+  background-color: #fff;
+}
+
+.pdctdetails .pdctdetails-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.pdctdetails .pdctdetails-flex img {
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 10px;
+}
+
+.pdctdetails .pdctdetails-flex .pdctdetails-content {
+  width: 100%;
+  margin-left: 10px;
+}
+
+.pdctdetails .pdctdetails-flex .pdctdetails-content h1 {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.pdctdetails .pdctdetails-flex .pdctdetails-content .stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.pdctdetails .pdctdetails-flex .pdctdetails-content .stars p {
+  margin-left: 10px;
+  color: #aaaaaa;
+  font-size: 14px;
+}
+
+.pdctdetails .pdctdetails-flex .pdctdetails-content .stars .MuiSvgIcon-root {
+  color: #aaaaaa;
+  font-size: 19px;
+}
+
+.pdctdetails .pdctdetails-flex .pdctdetails-content .stars .items-sold {
+  color: #f10e0e;
+  margin-left: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pdctdetails .pdctdetails-flex .pdctdetails-content .stars .items-sold .MuiSvgIcon-root {
+  margin-right: 5px;
+  color: #f10e0e;
+}
+
+.pdctdetails .pdctdetails-flex .pdctdetails-content .vendor-info {
+  margin-bottom: 20px;
+}
+
+.pdctdetails .pdctdetails-flex .pdctdetails-content .vendor-info p {
+  font-size: 14px;
+}
+
+.pdctdetails .pdctdetails-flex .pdctdetails-content .pdctdetails-info .pdct-price {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.pdctdetails .pdctdetails-flex .pdctdetails-content .pdctdetails-info .pdct-details {
+  font-size: 14px;
+}
+/*# sourceMappingURL=ProductDetails.css.map */
