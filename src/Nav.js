@@ -72,8 +72,8 @@ function Nav({ totalItems }) {
             </a>
             <ul className={click ? "nav-menu active" : "nav-menu"}>
               <li className="nav-item">
-                <a href="/MenuPage" className="nav-links">
-                  Product
+                <a href="/AllProducts" className="nav-links">
+                  All Products
                 </a>
               </li>
               <li className="nav-item">

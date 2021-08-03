@@ -60,7 +60,7 @@ function ProductDetails({ product, onAddToCart }) {
   return (
     <div className="pdctdetails">
       <div className="pdctdetails-flex">
-        <img src={pdctItem.img} alt="" />
+        <img src={pdctItem.img} alt="" id="featuredimg" />
         <div className="pdctdetails-content">
           <h1>{pdctItem.title}</h1>
           <div className="pdctdetails-reviews">
