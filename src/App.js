@@ -8,7 +8,6 @@ import AllProducts from "./AllProducts";
 import Cart from "./Cart";
 import Checkout from "./Checkout";
 import ProductDetails from "./ProductDetails";
-
 const App = () => {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState({});

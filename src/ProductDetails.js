@@ -12,10 +12,10 @@ import StarIcon from "@material-ui/icons/Star";
 import StarHalfIcon from "@material-ui/icons/StarHalf";
 import WhatshotIcon from "@material-ui/icons/Whatshot";
 import ReactImageMagnify from 'react-image-magnify';
-import RowItems from "./RowItems";
+import Product from "./Product";
 
 
-function ProductDetails({ product, onAddToCart }) {
+function ProductDetails({ product, products, onAddToCart }) {
   const productDetails = [
     {
       title: "Earphones",
@@ -61,6 +61,7 @@ function ProductDetails({ product, onAddToCart }) {
   var pdctId = new URLSearchParams(window.location.search).get("Id");
   const pdctItem = productDetails.find((pdct) => pdct.pdctId == pdctId);
   return (
+    
     <div className="pdctdetails">
       <div className="pdctdetails-flex">
           <div className="img-container">
@@ -76,6 +77,7 @@ function ProductDetails({ product, onAddToCart }) {
     }
 }} />
 </div>
+
         <div className="pdctdetails-content">
           <h1>{pdctItem.title}</h1>
           <div className="pdctdetails-reviews">
@@ -112,7 +114,16 @@ function ProductDetails({ product, onAddToCart }) {
           </div>
         </div>
       </div>
-      <RowItems />
+      <div className="product-line">
+        <h2>Related Products</h2>
+      <div className="product-line-flex">
+      {products.map((product) => (
+          <div className="product-card" key={product.id}>
+            <Product product={product} onAddToCart={onAddToCart} />
+          </div>
+        ))}
+  </div>
+  </div>
     </div>
   );
 }

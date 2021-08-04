@@ -22,4 +22,23 @@
 .row-items .row-items-flex::-webkit-scrollbar {
   display: none;
 }
+
+.row-items .product-line .product-line-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  overflow-x: scroll;
+}
+
+.row-items .product-line .product-line-flex::-webkit-scrollbar {
+  display: none;
+}
+
+.row-items .product-line .productcard-body {
+  margin: 0 15px 0 0 !important;
+}
 /*# sourceMappingURL=RowItems.css.map */

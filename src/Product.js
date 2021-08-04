@@ -32,7 +32,7 @@ const Product = ({ product, onAddToCart }) => {
             className="add-to-cart"
             onClick={() => onAddToCart(product.id, 1)}
           >
-            <AddShoppingCartIcon />
+            <AddShoppingCartIcon /> Add to Cart
           </button>
           </div>
         </div>

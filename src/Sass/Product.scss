@@ -6,7 +6,6 @@
         height: 100%;
         margin: 10px;
         background-color: #fff;
-        box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.158);
         img {
             max-height: 200px;
         }
@@ -23,13 +22,12 @@
                 color: #566177;
             }
             .pcc-price {
-                font-size: 17.6px;
-                font-weight: 700;
+                font-size: 19px;
+                font-weight: 800;
             }
             .productcard-bottom {
                 display: flex;
-                justify-content: space-between;
-                align-items: center;
+                flex-flow: column;
             }
             .stars {
                 margin-bottom: 4px;
@@ -43,11 +41,21 @@
                 font-weight: 400;
             }
             .add-to-cart {
+                padding: 5px 20px;
                 background-color: transparent;
                 border: none;
                 cursor: pointer;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                color: #333;
+                font-weight: 700;
+                border: 2px solid #333;
+                border-radius: 40px;
+                margin-top: 10px;
                 .MuiSvgIcon-root {
                     font-size: 28px;
+                    color: #333;
                 }
             }
         }

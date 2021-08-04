@@ -12,8 +12,6 @@
   height: 100%;
   margin: 10px;
   background-color: #fff;
-  -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.158);
-          box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.158);
 }
 
 .productcard .productcard-body img {
@@ -37,20 +35,18 @@
 }
 
 .productcard .productcard-body .productcard-content .pcc-price {
-  font-size: 17.6px;
-  font-weight: 700;
+  font-size: 19px;
+  font-weight: 800;
 }
 
 .productcard .productcard-body .productcard-content .productcard-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 
 .productcard .productcard-body .productcard-content .stars {
@@ -68,12 +64,28 @@
 }
 
 .productcard .productcard-body .productcard-content .add-to-cart {
+  padding: 5px 20px;
   background-color: transparent;
   border: none;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #333;
+  font-weight: 700;
+  border: 2px solid #333;
+  border-radius: 40px;
+  margin-top: 10px;
 }
 
 .productcard .productcard-body .productcard-content .add-to-cart .MuiSvgIcon-root {
   font-size: 28px;
+  color: #333;
 }
 /*# sourceMappingURL=Product.css.map */

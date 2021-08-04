@@ -110,4 +110,23 @@
   border: 1px solid #0073e5;
   font-weight: 700;
 }
+
+.pdctdetails .product-line {
+  padding: 20px 30px;
+}
+
+.pdctdetails .product-line .product-line-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  overflow-x: scroll;
+}
+
+.pdctdetails .product-line .product-line-flex::-webkit-scrollbar {
+  display: none;
+}
 /*# sourceMappingURL=ProductDetails.css.map */

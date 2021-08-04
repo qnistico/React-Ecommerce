@@ -1,14 +1,15 @@
 .allproducts {
     width: 100%;
+    background-color: #fff;
 padding-top: 100px;
     .allproducts-flex {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         flex-flow: row wrap;
-        max-width: 1280px;
+        max-width: 1400px;
         margin: auto;
         .product-card {
-            width: 25%;
+            width: 20%;
             min-width: 280px;
         }
     }
