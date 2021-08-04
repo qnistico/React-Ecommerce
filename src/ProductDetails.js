@@ -12,6 +12,7 @@ import StarIcon from "@material-ui/icons/Star";
 import StarHalfIcon from "@material-ui/icons/StarHalf";
 import WhatshotIcon from "@material-ui/icons/Whatshot";
 import ReactImageMagnify from 'react-image-magnify';
+import RowItems from "./RowItems";
 
 
 function ProductDetails({ product, onAddToCart }) {
@@ -63,7 +64,7 @@ function ProductDetails({ product, onAddToCart }) {
     <div className="pdctdetails">
       <div className="pdctdetails-flex">
           <div className="img-container">
-      <ReactImageMagnify fadeDurationInMs="0" hoverDelayInMs="0" {...{
+      <ReactImageMagnify fadeDurationInMs="0" hoverDelayInMs="0" shouldUsePositiveSpaceLens="true" {...{
     smallImage: {
         isFluidWidth: true,
         src: pdctItem.img
@@ -111,6 +112,7 @@ function ProductDetails({ product, onAddToCart }) {
           </div>
         </div>
       </div>
+      <RowItems />
     </div>
   );
 }
