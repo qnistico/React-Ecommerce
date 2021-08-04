@@ -16,50 +16,11 @@ import Product from "./Product";
 
 
 function ProductDetails({ product, products, onAddToCart }) {
-  const productDetails = [
-    {
-      title: "Earphones",
-      details:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
-      price: "$1",
-      img: earphones1,
-      pdctId: "1",
-    },
-    {
-      title: "hi",
-      details:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
-      price: "$1",
-      img: earphones1,
-      pdctId: "2",
-    },
-    {
-      title: "hi",
-      details:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
-      price: "$1",
-      img: earphones1,
-      pdctId: "3",
-    },
-    {
-      title: "hi",
-      details:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
-      price: "$1",
-      img: earphones1,
-      pdctId: "4",
-    },
-    {
-      title: "hi",
-      details:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
-      price: "$1",
-      img: earphones1,
-      pdctId: "5",
-    },
-  ];
+  
   var pdctId = new URLSearchParams(window.location.search).get("Id");
-  const pdctItem = productDetails.find((pdct) => pdct.pdctId == pdctId);
+  const pdctItem = products.find((pdct) => pdct.id == pdct.id);
+  console.log(products, pdctItem);
+  
   return (
     
     <div className="pdctdetails">
@@ -68,10 +29,10 @@ function ProductDetails({ product, products, onAddToCart }) {
       <ReactImageMagnify fadeDurationInMs="0" hoverDelayInMs="0" shouldUsePositiveSpaceLens="true" {...{
     smallImage: {
         isFluidWidth: true,
-        src: pdctItem.img
+        src: pdctItem?.media?.source
     },
     largeImage: {
-        src: pdctItem.img,
+        src: pdctItem?.media?.source,
         width: 1200,
         height: 1200
     }
@@ -79,7 +40,7 @@ function ProductDetails({ product, products, onAddToCart }) {
 </div>
 
         <div className="pdctdetails-content">
-          <h1>{pdctItem.title}</h1>
+          <h1>{pdctItem?.title}</h1>
           <div className="pdctdetails-reviews">
             <div className="stars">
                 <div className="stars-flex">
@@ -103,13 +64,13 @@ function ProductDetails({ product, products, onAddToCart }) {
             <p>Availability: 23 in stock</p>
           </div>
           <div className="pdctdetails-info">
-            <p className="pdct-price">{pdctItem.price}</p>
-            <p className="pdct-details">{pdctItem.details}</p>
+            <p className="pdct-price">{pdctItem?.price.formatted_with_symbol}</p>
+            <p className="pdct-details">{pdctItem?.details}</p>
           </div>
           <div className="pdctdetails-add">
             <button
               className="add-to-cart"
-              onClick={() => onAddToCart(product.id, 1)}
+              onClick={() => onAddToCart(pdctItem?.id, 1)}
             >Add to Cart</button>
           </div>
         </div>

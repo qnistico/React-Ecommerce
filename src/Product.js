@@ -3,8 +3,10 @@ import "./Sass/Product.scss";
 import StarIcon from "@material-ui/icons/Star";
 import StarHalfIcon from "@material-ui/icons/StarHalf";
 import AddShoppingCartIcon from "@material-ui/icons/AddShoppingCart";
+import { useHistory } from "react-router-dom";
 
 const Product = ({ product, onAddToCart }) => {
+  const history = useHistory();
   return (
     <div className="productcard">
       <div className="productcard-body">
@@ -30,9 +32,8 @@ const Product = ({ product, onAddToCart }) => {
 
           <button
             className="add-to-cart"
-            onClick={() => onAddToCart(product.id, 1)}
-          >
-            <AddShoppingCartIcon /> Add to Cart
+            onClick={() => history.push(`/ProductDetails?id=${product.id}`)}
+          >View Product
           </button>
           </div>
         </div>

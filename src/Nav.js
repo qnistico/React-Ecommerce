@@ -7,6 +7,7 @@ import PhoneIcon from "@material-ui/icons/Phone";
 import QueryBuilderIcon from "@material-ui/icons/QueryBuilder";
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import logo from "./img/logo.png";
 
 function Nav({ totalItems }) {
   const [click, setClick] = useState(false);
@@ -68,7 +69,7 @@ function Nav({ totalItems }) {
         <nav className="navbar" id="navbar">
           <div className="nav-container">
             <a href="/">
-              Logo
+              logo
             </a>
             <ul className={click ? "nav-menu active" : "nav-menu"}>
               <li className="nav-item">

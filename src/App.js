@@ -8,6 +8,7 @@ import AllProducts from "./AllProducts";
 import Cart from "./Cart";
 import Checkout from "./Checkout";
 import ProductDetails from "./ProductDetails";
+import RowItems from "./RowItems";
 const App = () => {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState({});
@@ -58,7 +59,7 @@ const App = () => {
 
         <Switch>
           <Route exact path="/">
-            <LandingPage />
+            <LandingPage products={products} onAddToCart={handleAddToCart} />
           </Route>
           <Route exact path="/AllProducts">
             <AllProducts products={products} onAddToCart={handleAddToCart} />
