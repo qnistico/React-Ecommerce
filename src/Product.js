@@ -3,6 +3,8 @@ import "./Sass/Product.scss";
 import StarIcon from "@material-ui/icons/Star";
 import StarHalfIcon from "@material-ui/icons/StarHalf";
 import AddShoppingCartIcon from "@material-ui/icons/AddShoppingCart";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
 import { useHistory } from "react-router-dom";
 
 const Product = ({ product, onAddToCart }) => {
@@ -25,16 +27,18 @@ const Product = ({ product, onAddToCart }) => {
             <StarHalfIcon />
           </div>
           <div className="productcard-bottom">
-          <p className="pcc-price">
-            <span className="from">from </span>
-            {product.price.formatted_with_symbol}
-          </p>
+            <p className="pcc-price">
+              <span className="from">from </span>
+              {product.price.formatted_with_symbol}
+            </p>
 
-          <button
-            className="add-to-cart"
-            onClick={() => history.push(`/ProductDetails?id=${product.id}`)}
-          >View Product
-          </button>
+            <button
+              className="add-to-cart"
+              onClick={() => history.push(`/ProductDetails?id=${product?.id}`)}
+
+            >
+              View Product
+            </button>
           </div>
         </div>
       </div>

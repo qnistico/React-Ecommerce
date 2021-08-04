@@ -11,45 +11,48 @@ import "./Sass/ProductDetails.scss";
 import StarIcon from "@material-ui/icons/Star";
 import StarHalfIcon from "@material-ui/icons/StarHalf";
 import WhatshotIcon from "@material-ui/icons/Whatshot";
-import ReactImageMagnify from 'react-image-magnify';
+import ReactImageMagnify from "react-image-magnify";
 import Product from "./Product";
 
-
 function ProductDetails({ product, products, onAddToCart }) {
-  
   var pdctId = new URLSearchParams(window.location.search).get("Id");
   const pdctItem = products.find((pdct) => pdct.id == pdct.id);
   console.log(products, pdctItem);
-  
+
   return (
-    
     <div className="pdctdetails">
       <div className="pdctdetails-flex">
-          <div className="img-container">
-      <ReactImageMagnify fadeDurationInMs="0" hoverDelayInMs="0" shouldUsePositiveSpaceLens="true" {...{
-    smallImage: {
-        isFluidWidth: true,
-        src: pdctItem?.media?.source
-    },
-    largeImage: {
-        src: pdctItem?.media?.source,
-        width: 1200,
-        height: 1200
-    }
-}} />
-</div>
+        <div className="img-container">
+          <ReactImageMagnify 
+            fadeDurationInMs="0"
+            hoverDelayInMs="0"
+            shouldUsePositiveSpaceLens="true"
+            {...{
+              smallImage: {
+                isFluidWidth: true,
+                src: pdctItem?.media.source,
+              },
+              largeImage: {
+                src: pdctItem?.media.source,
+                width: 1200,
+                height: 1200,
+              },
+            }}
+          />
+        </div>
 
         <div className="pdctdetails-content">
-          <h1>{pdctItem?.title}</h1>
+          <h1 dangerouslySetInnerHTML={{ __html: pdctItem?.name }}>
+          </h1>
           <div className="pdctdetails-reviews">
             <div className="stars">
-                <div className="stars-flex">
-              <StarIcon />
-              <StarIcon />
-              <StarIcon />
-              <StarIcon />
-              <StarIcon />
-              <p>No reviews</p>
+              <div className="stars-flex">
+                <StarIcon />
+                <StarIcon />
+                <StarIcon />
+                <StarIcon />
+                <StarIcon />
+                <p>No reviews</p>
               </div>
               <div>
                 <p className="items-sold">
@@ -64,27 +67,34 @@ function ProductDetails({ product, products, onAddToCart }) {
             <p>Availability: 23 in stock</p>
           </div>
           <div className="pdctdetails-info">
-            <p className="pdct-price">{pdctItem?.price.formatted_with_symbol}</p>
-            <p className="pdct-details">{pdctItem?.details}</p>
+            <p className="pdct-price">
+              {pdctItem?.price.formatted_with_symbol}
+            </p>
+            <p
+              className="pdct-details"
+              dangerouslySetInnerHTML={{ __html: pdctItem?.description }}
+            ></p>
           </div>
           <div className="pdctdetails-add">
             <button
               className="add-to-cart"
               onClick={() => onAddToCart(pdctItem?.id, 1)}
-            >Add to Cart</button>
+            >
+              Add to Cart
+            </button>
           </div>
         </div>
       </div>
       <div className="product-line">
         <h2>Related Products</h2>
-      <div className="product-line-flex">
-      {products.map((product) => (
-          <div className="product-card" key={product.id}>
-            <Product product={product} onAddToCart={onAddToCart} />
-          </div>
-        ))}
-  </div>
-  </div>
+        <div className="product-line-flex">
+          {products.map((product) => (
+            <div className="product-card" key={product.id}>
+              <Product product={product} onAddToCart={onAddToCart} />
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
