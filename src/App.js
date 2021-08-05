@@ -9,6 +9,7 @@ import Cart from "./Cart";
 import Checkout from "./Checkout";
 import ProductDetails from "./ProductDetails";
 import RowItems from "./RowItems";
+import ScrollToTop from "./ScrollToTop";
 const App = () => {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState({});
@@ -55,6 +56,7 @@ const App = () => {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop />
         <Nav totalItems={cart.total_items} />
 
         <Switch>
