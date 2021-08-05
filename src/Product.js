@@ -12,7 +12,13 @@ const Product = ({ product, onAddToCart }) => {
   return (
     <div className="productcard">
       <div className="productcard-body">
-        <img src={product.media.source} alt="" />
+        <div className="img-container">
+          <img
+            src={product.media.source}
+            alt=""
+            onClick={() => history.push(`/ProductDetails?id=${product?.id}`)}
+          />
+        </div>
         <div className="productcard-content">
           <p className="pcc-name">{product.name}</p>
           <p
@@ -35,7 +41,6 @@ const Product = ({ product, onAddToCart }) => {
             <button
               className="add-to-cart"
               onClick={() => history.push(`/ProductDetails?id=${product?.id}`)}
-
             >
               View Product
             </button>

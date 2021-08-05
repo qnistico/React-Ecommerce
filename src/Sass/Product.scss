@@ -6,9 +6,21 @@
         height: 100%;
         margin: 10px;
         background-color: #fff;
+        .img-container {
+            width: 100%;
+            max-width: 260px;
+            max-height: 180px;
+            overflow: hidden;
         img {
-            max-height: 200px;
+            max-height: 180px;
+            max-width: 260px;
+            transition: all 0.3s ease;
+            cursor: pointer;
         }
+        img:hover {
+            transform: scale(1.1);
+        }
+    }
         .productcard-content {
             padding: 20px;
             .pcc-name {

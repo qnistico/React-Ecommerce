@@ -14,8 +14,24 @@
   background-color: #fff;
 }
 
-.productcard .productcard-body img {
-  max-height: 200px;
+.productcard .productcard-body .img-container {
+  width: 100%;
+  max-width: 260px;
+  max-height: 180px;
+  overflow: hidden;
+}
+
+.productcard .productcard-body .img-container img {
+  max-height: 180px;
+  max-width: 260px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.productcard .productcard-body .img-container img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .productcard .productcard-body .productcard-content {

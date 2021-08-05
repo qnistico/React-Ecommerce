@@ -15,8 +15,8 @@ import ReactImageMagnify from "react-image-magnify";
 import Product from "./Product";
 
 function ProductDetails({ product, products, onAddToCart }) {
-  var pdctid = new URLSearchParams(window.location.search).get("id");
-  const pdctItem = products.find((pdct) => pdct.id === pdctid);
+  var pdctId = new URLSearchParams(window.location.search).get("id");
+  const pdctItem = products.find((pdct) => pdct.id === pdctId);
   console.log(products, pdctItem);
 
   return (
