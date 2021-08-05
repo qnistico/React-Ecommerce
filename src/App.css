@@ -26,57 +26,21 @@ a {
 }
 
 .hero-button {
-  background-color: transparent;
-  max-width: 200p;
-  color: #333;
   padding: 12px 20px;
+  background-color: transparent;
   border: 2px solid #333;
-  font-size: 19px;
+  text-decoration: none;
   font-weight: 700;
-  cursor: pointer;
-  -webkit-transition: all 0.618s ease;
-  transition: all 0.618s ease;
+  color: #333;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.158), 0 2px 10px 0 rgba(0, 0, 0, 0.158);
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.158), 0 2px 10px 0 rgba(0, 0, 0, 0.158);
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  position: relative;
-  overflow: hidden;
-  transition: all 0.618s ease;
 }
 
-.hero-button::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0;
-  background: -webkit-gradient(linear, left top, right top, from(#333), to(#333));
-  background: linear-gradient(to right, #333, #333);
-  -webkit-transform: scaleY(0);
-          transform: scaleY(0);
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transition: all 0.38s ease;
-  transition: all 0.38s ease;
-  -webkit-transform-origin: 0% 100%;
-          transform-origin: 0% 100%;
-}
-
-.hero-button:hover:before,
-.hero-button:focus:before,
-.hero-button:active:before {
-  -webkit-transform: scaleX(1.1);
-          transform: scaleX(1.1);
-}
-
-.hero-button:hover,
-.hero-button:focus,
-.hero-button:active {
-  color: #f1f2f5 !important;
-  background-color: #333 !important;
+.hero-button:hover {
+  background-color: #333;
+  color: #f1f2f5;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
