@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import earphones1 from "./img/earphones1.jpg";
 import earphones2 from "./img/earphones2.jpg";
 import keyboard1 from "./img/keyboard1.jpg";
@@ -13,11 +13,21 @@ import StarHalfIcon from "@material-ui/icons/StarHalf";
 import WhatshotIcon from "@material-ui/icons/Whatshot";
 import ReactImageMagnify from "react-image-magnify";
 import Product from "./Product";
+import {useLocation} from "react-router-dom";
 
 function ProductDetails({ product, products, onAddToCart }) {
-  var pdctId = new URLSearchParams(window.location.search).get("id");
-  const pdctItem = products.find((pdct) => pdct.id === pdctId);
-  console.log(products, pdctItem);
+
+  let location = useLocation();
+  const [pdctItem, setPdctItem] = useState();
+  const [pdctId, setPdctId] = useState('');
+
+  useEffect(() => {
+    const tempPdctId = new URLSearchParams(location.search).get("id");
+    setPdctId(tempPdctId);
+    const tempPrdct = products.find((pdct) => pdct.id === tempPdctId);
+    setPdctItem(tempPrdct);
+  }, [location]);
+
 
   return (
     <div className="pdctdetails">
