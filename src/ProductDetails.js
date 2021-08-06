@@ -25,14 +25,14 @@ function ProductDetails({ product, products, onAddToCart }) {
   useEffect(() => {
     const tempPdctId = new URLSearchParams(location.search).get("id");
     setPdctId(tempPdctId);
-    const tempPrdct = products.find((pdct) => pdct.id === tempPdctId);
-    setPdctItem(tempPrdct);
+    const tempPdct = products.find((pdct) => pdct.id === tempPdctId);
+    setPdctItem(tempPdct);
   }, [location]);
 
 
   return (
     <div className="pdctdetails">
-      <div className="pdctdetails-flex">
+      <div className="pdctdetails-flex">  
         <div className="img-container">
           <ReactImageMagnify
             fadeDurationInMs="0"
