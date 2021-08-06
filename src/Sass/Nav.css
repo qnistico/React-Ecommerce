@@ -165,8 +165,8 @@
   text-decoration: none;
   position: relative;
   padding: 5px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.32s ease;
+  transition: all 0.32s ease;
 }
 
 .nav-cart .cart-badge {

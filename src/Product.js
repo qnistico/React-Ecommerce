@@ -23,7 +23,9 @@ const Product = ({ product, onAddToCart }) => {
           <p className="pcc-name">{product.name}</p>
           <p
             className="pcc-description"
+            /*
             dangerouslySetInnerHTML={{ __html: product.description }}
+            */
           />
           <div className="stars">
             <StarIcon />

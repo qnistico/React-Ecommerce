@@ -13,7 +13,7 @@ justify-content: center;
 align-items: center;
 max-width: 1400px;
 height: 600px;
-padding: 0 20px 0 100px;
+padding: 0 40px 0 100px;
     margin: auto;
     .mobilebanner-content {
         width: 100%;
@@ -24,14 +24,14 @@ padding: 0 20px 0 100px;
             font-weight: 800;
             color: #f1f2f5;
             margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
         }
         p {
             margin-bottom: 20px;
             color: #f1f2f5;
             font-size: 20px;
             font-weight: 700;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 
         }
         button {
@@ -42,9 +42,9 @@ padding: 0 20px 0 100px;
     }
     img {
         position: relative;
-        width: 650px;
+        width: 665px;
         transform: rotate(1deg);
-        
+        right: -40px;
     }
     
 

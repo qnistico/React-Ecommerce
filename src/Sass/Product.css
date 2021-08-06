@@ -24,8 +24,8 @@
 .productcard .productcard-body .img-container img {
   max-height: 180px;
   max-width: 260px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.32s ease;
+  transition: all 0.32s ease;
   cursor: pointer;
 }
 
@@ -98,10 +98,17 @@
   border: 2px solid #333;
   border-radius: 40px;
   margin-top: 10px;
+  -webkit-transition: all 0.32s ease;
+  transition: all 0.32s ease;
 }
 
 .productcard .productcard-body .productcard-content .add-to-cart .MuiSvgIcon-root {
   font-size: 28px;
   color: #333;
+}
+
+.productcard .productcard-body .productcard-content .add-to-cart:hover {
+  background-color: #333;
+  color: #f1f2f5;
 }
 /*# sourceMappingURL=Product.css.map */
