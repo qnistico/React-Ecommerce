@@ -13,22 +13,22 @@ import StarHalfIcon from "@material-ui/icons/StarHalf";
 import WhatshotIcon from "@material-ui/icons/Whatshot";
 import ReactImageMagnify from "react-image-magnify";
 import Product from "./Product";
-import { useLocation } from "react-router-dom";
 
-function ProductDetails({ product, products, onAddToCart, props }) {
-  const [productId, setProductId] = useState("");
+import {useLocation} from "react-router-dom";
 
-  useEffect(() => {}, [props.location.search]);
-  function usePageViews() {
-    let location = useLocation();
-    useEffect(() => {
-      ga.send([(`/ProductDetails?id=${product?.id}`), location.pathname]);
-    }, [location]);
-  }
+function ProductDetails({ product, products, onAddToCart }) {
 
-  var pdctId = new URLSearchParams(window.location.search).get("id");
-  const pdctItem = products.find((pdct) => pdct.id === pdctId);
-  console.log(products, pdctItem);
+  let location = useLocation();
+  const [pdctItem, setPdctItem] = useState();
+  const [pdctId, setPdctId] = useState('');
+
+  useEffect(() => {
+    const tempPdctId = new URLSearchParams(location.search).get("id");
+    setPdctId(tempPdctId);
+    const tempPrdct = products.find((pdct) => pdct.id === tempPdctId);
+    setPdctItem(tempPrdct);
+  }, [location]);
+
 
   return (
     <div className="pdctdetails">
