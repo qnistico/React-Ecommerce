@@ -1,13 +1,19 @@
-import React from 'react';
+import React from "react";
 import "./Sass/MobileBanner.scss";
-import overlay1 from "./img/overlay1.png";
-
+import mobileoverlay from "./img/mobileoverlaymin.png";
 function MobileBanner() {
-    return (
-        <div className="mobilebanner">
-            <img src={overlay1} alt="" />
+  return (
+    <div className="mobilebanner">
+      <div className="mobilebanner-flex">
+        <div className="mobilebanner-content">
+            <h2>Up to 50% off on all mobile phones!</h2>
+            <p>Sale ends 01/01/2021</p>
+            <button className="hero-button">Shop Now</button>
         </div>
-    )
+        <img src={mobileoverlay} alt="" className="mobilephone-img" />
+      </div>
+    </div>
+  );
 }
 
-export default MobileBanner
+export default MobileBanner;
