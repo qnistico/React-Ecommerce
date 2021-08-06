@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import earphones1 from "./img/earphones1.jpg";
 import earphones2 from "./img/earphones2.jpg";
 import keyboard1 from "./img/keyboard1.jpg";
@@ -13,8 +13,19 @@ import StarHalfIcon from "@material-ui/icons/StarHalf";
 import WhatshotIcon from "@material-ui/icons/Whatshot";
 import ReactImageMagnify from "react-image-magnify";
 import Product from "./Product";
+import { useLocation } from "react-router-dom";
 
-function ProductDetails({ product, products, onAddToCart }) {
+function ProductDetails({ product, products, onAddToCart, props }) {
+  const [productId, setProductId] = useState("");
+
+  useEffect(() => {}, [props.location.search]);
+  function usePageViews() {
+    let location = useLocation();
+    useEffect(() => {
+      ga.send([(`/ProductDetails?id=${product?.id}`), location.pathname]);
+    }, [location]);
+  }
+
   var pdctId = new URLSearchParams(window.location.search).get("id");
   const pdctItem = products.find((pdct) => pdct.id === pdctId);
   console.log(products, pdctItem);
@@ -23,7 +34,7 @@ function ProductDetails({ product, products, onAddToCart }) {
     <div className="pdctdetails">
       <div className="pdctdetails-flex">
         <div className="img-container">
-          <ReactImageMagnify 
+          <ReactImageMagnify
             fadeDurationInMs="0"
             hoverDelayInMs="0"
             shouldUsePositiveSpaceLens="true"
@@ -42,8 +53,7 @@ function ProductDetails({ product, products, onAddToCart }) {
         </div>
 
         <div className="pdctdetails-content">
-          <h1 dangerouslySetInnerHTML={{ __html: pdctItem?.name }}>
-          </h1>
+          <h1 dangerouslySetInnerHTML={{ __html: pdctItem?.name }}></h1>
           <div className="pdctdetails-reviews">
             <div className="stars">
               <div className="stars-flex">

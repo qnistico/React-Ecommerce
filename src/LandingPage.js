@@ -6,6 +6,7 @@ import Hero from "./Hero";
 import RowItems from './RowItems';
 import "./Sass/LandingPage.scss";
 import { commerce } from "./Library/commerce";
+import MobileBanner from './MobileBanner';
 
 
 
@@ -46,6 +47,7 @@ function LandingPage({ onAddToCart, products }) {
             <RowItems products={products} onAddToCart={onAddToCart} />
             <BannerProductOne />
             <CardDouble />
+            <MobileBanner />
         </div>
     )
 }
