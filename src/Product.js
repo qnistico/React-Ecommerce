@@ -4,6 +4,7 @@ import StarIcon from "@material-ui/icons/Star";
 import StarHalfIcon from "@material-ui/icons/StarHalf";
 import AddShoppingCartIcon from "@material-ui/icons/AddShoppingCart";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import StarOutlineIcon from '@material-ui/icons/StarOutline';
 
 import { useHistory } from "react-router-dom";
 
@@ -20,6 +21,13 @@ const Product = ({ product, onAddToCart }) => {
           />
         </div>
         <div className="productcard-content">
+        <div className="stars">
+            <StarOutlineIcon />
+            <StarOutlineIcon />
+            <StarOutlineIcon />
+            <StarOutlineIcon />
+            <StarOutlineIcon />
+          </div>
           <p className="pcc-name">{product.name}</p>
           <p
             className="pcc-description"
@@ -27,13 +35,7 @@ const Product = ({ product, onAddToCart }) => {
             dangerouslySetInnerHTML={{ __html: product.description }}
             */
           />
-          <div className="stars">
-            <StarIcon />
-            <StarIcon />
-            <StarIcon />
-            <StarIcon />
-            <StarHalfIcon />
-          </div>
+          
           <div className="productcard-bottom">
             <p className="pcc-price">
               <span className="from">from </span>

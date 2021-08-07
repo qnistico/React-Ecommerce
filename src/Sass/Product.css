@@ -53,6 +53,9 @@
 .productcard .productcard-body .productcard-content .pcc-price {
   font-size: 19px;
   font-weight: 800;
+  border-bottom: 1px solid #d1d1d1;
+  padding-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .productcard .productcard-body .productcard-content .productcard-bottom {

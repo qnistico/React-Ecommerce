@@ -14,30 +14,30 @@ import WhatshotIcon from "@material-ui/icons/Whatshot";
 import ReactImageMagnify from "react-image-magnify";
 import Product from "./Product";
 
-import {useLocation} from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 function ProductDetails({ product, products, onAddToCart }) {
-
   let location = useLocation();
   const [pdctItem, setPdctItem] = useState();
-  const [pdctId, setPdctId] = useState('');
+  const [pdctId, setPdctId] = useState("");
 
   useEffect(() => {
     const tempPdctId = new URLSearchParams(location.search).get("id");
     setPdctId(tempPdctId);
     const tempPdct = products.find((pdct) => pdct.id === tempPdctId);
     setPdctItem(tempPdct);
-  }, [location]);
-
+  }, [location, products]);
 
   return (
     <div className="pdctdetails">
-      <div className="pdctdetails-flex">  
+      <div className="pdctdetails-flex">
         <div className="img-container">
           <ReactImageMagnify
             fadeDurationInMs="0"
             hoverDelayInMs="0"
             shouldUsePositiveSpaceLens="true"
+            enlargedImageContainerClassName="zoom-img"
+
             {...{
               smallImage: {
                 isFluidWidth: true,

@@ -1,6 +1,6 @@
 .mobilebanner {
   height: 600px;
-  background: url(./mobilebg.png);
+  background: url(./mobilegradient.png);
   background-size: cover;
   background-position: center;
   max-width: 1400px;
@@ -34,18 +34,22 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .mobilebanner .mobilebanner-flex .mobilebanner-content h2 {
-  font-size: 56px;
+  font-size: 48px;
   font-weight: 800;
   color: #f1f2f5;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .mobilebanner .mobilebanner-flex .mobilebanner-content p {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color: #f1f2f5;
   font-size: 20px;
   font-weight: 700;
@@ -53,16 +57,18 @@
 }
 
 .mobilebanner .mobilebanner-flex .mobilebanner-content button {
-  max-width: 200px;
+  max-width: 125px;
   background-color: #333;
   color: #f1f2f5;
+  border-color: #e6e6e6;
 }
 
 .mobilebanner .mobilebanner-flex img {
   position: relative;
-  width: 665px;
+  width: 750px;
   -webkit-transform: rotate(1deg);
           transform: rotate(1deg);
   right: -40px;
+  top: 40px;
 }
 /*# sourceMappingURL=MobileBanner.css.map */

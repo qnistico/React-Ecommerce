@@ -21,7 +21,7 @@
 
 .bp-1 .bp-1-flex {
   max-width: 1400px;
-  padding: 100px;
+  padding: 40px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,7 +36,7 @@
 }
 
 .bp-1 .bp-1-flex img {
-  width: 50%;
+  width: 650px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -49,7 +49,7 @@
 .bp-1 .bp-1-flex .bp-1-content h2 {
   font-size: 56px;
   font-weight: 800;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .bp-1 .bp-1-flex .bp-1-content p {
