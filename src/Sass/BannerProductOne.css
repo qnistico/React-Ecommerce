@@ -21,7 +21,6 @@
 
 .bp-1 .bp-1-flex {
   max-width: 1400px;
-  padding: 40px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,12 +41,13 @@
 }
 
 .bp-1 .bp-1-flex .bp-1-content {
-  width: 50%;
+  width: 40%;
+  min-width: 500px;
   text-align: center;
 }
 
 .bp-1 .bp-1-flex .bp-1-content h2 {
-  font-size: 56px;
+  font-size: 48px;
   font-weight: 800;
   margin-bottom: 30px;
 }
@@ -55,10 +55,11 @@
 .bp-1 .bp-1-flex .bp-1-content p {
   margin-bottom: 20px;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .bp-1 .bp-1-flex .bp-1-content .hero-button {
   padding: 10px 40px;
+  width: 156px;
 }
 /*# sourceMappingURL=BannerProductOne.css.map */

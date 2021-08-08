@@ -14,6 +14,7 @@ const Product = ({ product, onAddToCart }) => {
     <div className="productcard">
       <div className="productcard-body">
         <div className="img-container">
+          
           <img
             src={product.media.source}
             alt=""
