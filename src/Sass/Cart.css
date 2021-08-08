@@ -4,10 +4,16 @@
 
 .cart h1 {
   margin-bottom: 10px;
+  font-weight: 800;
 }
 
 .cart button {
   font-weight: 700;
+  border-radius: 100px;
+}
+
+.cart .no-items-cart {
+  margin-bottom: 20px;
 }
 
 .cart .cart-bottom {

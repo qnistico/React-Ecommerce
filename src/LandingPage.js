@@ -7,6 +7,7 @@ import RowItems from './RowItems';
 import "./Sass/LandingPage.scss";
 import { commerce } from "./Library/commerce";
 import MobileBanner from './MobileBanner';
+import Footer from './Footer';
 
 
 
@@ -48,6 +49,7 @@ function LandingPage({ onAddToCart, products }) {
             <BannerProductOne />
             <CardDouble />
             <MobileBanner />
+            <Footer />
         </div>
     )
 }

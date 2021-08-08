@@ -11,8 +11,8 @@ const Cart = ({
 }) => {
   const EmptyCart = () => (
     <div>
-      <p>No items in cart.</p>
-      <Link to="/AllProducts">Back to Shop</Link>
+      <p className="no-items-cart">No items in cart.</p>
+      <Link to="/AllProducts"><button className="hero-button">Back to Shop</button></Link>
     </div>
   );
   const CartAdded = () => (

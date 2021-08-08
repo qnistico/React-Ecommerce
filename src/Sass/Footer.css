@@ -1,1 +1,35 @@
-/* No CSS *//*# sourceMappingURL=Footer.css.map */
+footer {
+  width: 100%;
+  background-color: #eeeeee;
+  padding: 60px 0;
+}
+
+footer .footer-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1400px;
+  margin: auto;
+}
+
+footer .footer-flex .footer-item {
+  color: #222;
+  width: 25%;
+}
+
+footer .footer-flex .footer-item h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+footer .footer-flex .footer-item ul li {
+  list-style-type: none;
+  line-height: 2;
+}
+
+footer .footer-flex .footer-item ul li a {
+  text-decoration: none;
+  color: #222;
+}
+/*# sourceMappingURL=Footer.css.map */
