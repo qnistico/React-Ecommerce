@@ -2,17 +2,21 @@ import React, { useState, useEffect } from 'react';
 import { CssBaseline, Paper, Stepper, Step, StepLabel, Typography, CircularProgress, Divider, Button } from '@material-ui/core';
 import { Link, useHistory } from 'react-router-dom';
 
-import { commerce } from "@chec/commerce.js";
+import Commerce from "@chec/commerce.js";
 import AddressForm from '../AddressForm';
 import PaymentForm from '../PaymentForm';
 import useStyles from "./checkoutstyles";
 
 const steps = ['Shipping address', 'Payment details'];
 
+
+const commerce = new Commerce(process.env.REACT_APP_CHEC_PUBLIC_KEY);
+
 const Checkout = ({ cart, onCaptureCheckout, order, error }) => {
   const [checkoutToken, setCheckoutToken] = useState(null);
   const [activeStep, setActiveStep] = useState(0);
   const [shippingData, setShippingData] = useState({});
+
   const classes = useStyles();
   const history = useHistory();
 
@@ -20,18 +24,23 @@ const Checkout = ({ cart, onCaptureCheckout, order, error }) => {
   const backStep = () => setActiveStep((prevActiveStep) => prevActiveStep - 1);
 
   useEffect(() => {
-    if (cart.id) {
-      const generateToken = async () => {
-        try {
-          const token = await commerce.checkout.generateToken(cart.id, { type: 'cart' });
 
-          setCheckoutToken(token);
-        } catch {
-        }
-      };
+      (async () => {
+          if (cart.id) {
+              const generateToken = async () => {
+                  try {
 
-      generateToken();
-    }
+                      const token = await commerce.checkout.generateToken(cart.id, { type: 'cart' });
+                      console.log("TOKEN ", token)
+                      setCheckoutToken(token);
+                  } catch(err) {
+                      console.log(err);
+                  }
+              };
+
+              await generateToken();
+          }
+      })()
   }, [cart]);
 
   const test = (data) => {
