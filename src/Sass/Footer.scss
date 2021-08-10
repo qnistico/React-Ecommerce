@@ -1,27 +1,112 @@
 footer {
     width: 100%;
     background-color: #eeeeee;
-    padding: 60px 0;
+    padding: 60px  0 0 0;
+    .footer-newsletter {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 1400px;
+        margin: auto;
+        margin-bottom: 60px;
+        h3 {
+            font-size: 18px;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 30px;
+        }
+        .form-group {
+            display: flex;
+            input {
+                width: 400px;
+                padding: 15px 20px;
+                margin-right: 40px;
+                border-radius: 100px;
+                border: 1px solid #d1d1d1;
+                outline: none;
+            }
+            .hero-button {
+                background-color: #0073e5;
+                color: #fff;
+                border-color: #0073e5;
+                transition: all 0.3s ease;
+            }
+            .hero-button:hover {
+                background-color: transparent;
+                color: #333;
+            }
+        }
+        
+    }
     .footer-flex {
         display: flex;
         max-width: 1400px;
         margin: auto;
+        .footer-about {
+            min-width: 450px !important;
+        }
         .footer-item {
-            color: #222;
             width: 25%;
+            padding: 0 40px;
             h3 {
-                font-size: 20px;
-                font-weight: 700;
+                font-size: 18px;
+                font-weight: 800;
                 margin-bottom: 20px;
+                text-transform: uppercase;
+            }
+            p {
+                font-size: 14px;
+                line-height: 2;
             }
             ul li {
                 list-style-type: none;
                 line-height: 2;
                 a {
+                    font-size: 14px;
                     text-decoration: none;
-                    color: #222;
+                    color: #333;
                 }
             }
         }
     }
+    .creditcards {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        max-width: 1400px;
+        padding: 40px 0;
+        margin: auto;
+    }
+    .footer-bottom {
+        padding: 20px;
+        color: #333;
+        background-color: #fff;
+        .footer-bottom-flex {
+          display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        max-width: 1400px;
+        padding: 0 30px;
+        p {
+            font-size: 14px;
+            color: gray;
+        }
+        .footer-bottom-icons {
+          display: flex;
+          align-items: center;
+          a {
+        color: gray;
+          }
+        .MuiSvgIcon-root {
+          margin-left: 5px;
+          margin-bottom: 0;
+        }
+      }
+    }
+}
 }

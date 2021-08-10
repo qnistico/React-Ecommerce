@@ -10,8 +10,8 @@ function BannerProductOne() {
         <div className="bp-1">
             <div className="bp-1-flex">
             <div className="bp-1-content">
-                <p>Comfort ready keyboard</p>
-                <h2>XM43 Comfort Keyboard</h2>
+                <p>Macbook Laptop</p>
+                <h2>Macbook laptop Lorem</h2>
                 <button className="hero-button" onClick={() => history.push("/ProductDetails?id=prod_aZWNoyY2W2o80J")}>View</button>
             </div>
             <img src={laptop1} alt="" />

@@ -10,19 +10,19 @@
         flex-flow: row nowrap;
         overflow-x: scroll;
     }
-    .row-items-flex::-webkit-scrollbar {
-        display: none;
-    }
+    
     .product-line {
     .product-line-flex {
         display: flex;
         flex-flow: row nowrap;
         overflow-x: scroll;
+        padding-bottom: 12px;
         
     }
     .product-line-flex::-webkit-scrollbar {
-        display: none;
+        height: 13px;
     }
+    
     .productcard-body {
         margin: 0 15px 0 0 !important;
     }

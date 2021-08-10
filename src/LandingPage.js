@@ -49,7 +49,6 @@ function LandingPage({ onAddToCart, products }) {
             <BannerProductOne />
             <CardDouble />
             <MobileBanner />
-            <Footer />
         </div>
     )
 }

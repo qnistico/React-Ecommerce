@@ -6,6 +6,22 @@
         height: 100%;
         margin: 10px;
         background-color: #fff;
+        .productcard-overlay {
+            padding: 5px 8px;
+            font-size: 13px;
+            font-weight: 500;
+            font-family: 'Roboto', sans-serif;
+            color: #111;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 10px;
+            left: 10px;
+            z-index: 1;
+            background-color: #fac8c7;
+            
+        }
         .img-container {
             width: 100%;
             max-width: 260px;

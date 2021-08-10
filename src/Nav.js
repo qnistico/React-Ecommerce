@@ -69,7 +69,7 @@ function Nav({ totalItems }) {
         <nav className="navbar" id="navbar">
           <div className="nav-container">
             <a href="/">
-              logo
+              <img src={logo} alt="" className="nav-logo" />
             </a>
             <ul className={click ? "nav-menu active" : "nav-menu"}>
               <li className="nav-item">

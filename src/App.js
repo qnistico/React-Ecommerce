@@ -6,10 +6,11 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import LandingPage from "./LandingPage";
 import AllProducts from "./AllProducts";
 import Cart from "./Cart";
-import Checkout from "./Checkout";
 import ProductDetails from "./ProductDetails";
 import RowItems from "./RowItems";
 import ScrollToTop from "./ScrollToTop";
+import Footer from "./Footer";
+import Checkout from "./CheckoutForm/Checkout/Checkout";
 const App = () => {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState({});
@@ -81,6 +82,7 @@ const App = () => {
             <Checkout />
           </Route>
         </Switch>
+        <Footer />
       </Router>
     </div>
   );

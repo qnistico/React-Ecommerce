@@ -13,6 +13,7 @@ import SingleRowItem from "./SingleRowItem";
 import "./Sass/AllProducts.scss";
 
 const AllProducts = ({ products, onAddToCart }) => {
+  console.log(products);
   return (
     <div className="allproducts">
       <div className="allproducts-flex">

@@ -55,20 +55,19 @@ function Hero() {
   return (
     <div className="hero">
       <div className="hero-flex">
-      <div className="hero-text">
-            <p>Featured Lorem headphones for sale</p>
-            <h1>Experience pristine sound</h1>
-            <Link to="/AllProducts">
-                <button className="hero-button">View All Products</button>
-            </Link>
-          </div>
-          <img
-            src={heroimgnobg}
-            alt=""
-            className="parallaxify"
-            data-speed-multiplier="-1.618"
-          />
-          
+        <div className="hero-text">
+          <p>Get up to 50% off on all products this this weekend!</p>
+          <h1>Experience pristine sound</h1>
+          <Link to="/AllProducts">
+            <button className="hero-button">View All Products</button>
+          </Link>
+        </div>
+        <img
+          src={heroimgnobg}
+          alt=""
+          className="parallaxify"
+          data-speed-multiplier="-1.618"
+        />
       </div>
     </div>
   );

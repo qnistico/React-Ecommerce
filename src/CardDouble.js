@@ -2,6 +2,7 @@ import React from "react";
 import "./Sass/CardDouble.scss";
 import SingleCard from "./SingleCard";
 import speaker1 from "./img/speaker2nobg.png";
+import speaker3 from "./img/speaker3nobg.png";
 import mouse1 from "./img/mouse2nobg.png";
 import earphones2 from "./img/earphones2nobg.png";
 
@@ -14,7 +15,7 @@ function CardDouble(props) {
             sctop="XM4 Speakers"
             scspan="Excellent sound. "
             sch3="Headphones & Speakers"
-            scimg={speaker1}
+            scimg={speaker3}
             scalt="speaker"
           />
         </div>
