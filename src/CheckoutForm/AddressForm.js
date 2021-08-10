@@ -3,8 +3,10 @@ import { InputLabel, Select, MenuItem, Button, Grid, Typography } from '@materia
 import { useForm, FormProvider } from 'react-hook-form';
 import { Link } from 'react-router-dom';
 
-import { commerce } from "@chec/commerce.js";
+import Commerce from "@chec/commerce.js";
 import FormInput from './CustomTextField';
+
+const commerce = new Commerce(process.env.REACT_APP_CHEC_PUBLIC_KEY);
 
 const AddressForm = ({ checkoutToken, test }) => {
   const [shippingCountries, setShippingCountries] = useState([]);
