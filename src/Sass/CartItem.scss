@@ -49,8 +49,12 @@
                 background-color: #f10e0e;
                 border: 1px solid #f10e0e;
                 color: #fff;
+                transition: all 0.3s ease;
                 cursor: pointer;
 
+            }
+            .remove-button:hover {
+                background-color: #d10d0d;
             }
             
         }

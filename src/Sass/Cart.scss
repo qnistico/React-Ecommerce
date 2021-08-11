@@ -1,8 +1,14 @@
 .cart {
   padding: 100px 30px;
   h1 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-weight: 800;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 16px;
   }
   button {
     font-weight: 700;
@@ -20,14 +26,22 @@
       background-color: #f10e0e;
       border: 1px solid #f10e0e;
       color: #fff;
+      transition: all 0.3s ease;
       cursor: pointer;
+    }
+    .empty-cart-button:hover {
+      background-color: #d10d0d;
     }
     .checkout-button {
       padding: 12px 20px;
-      background-color: #0073e5;
+      background-color: #3f51b5;
       color: #fff;
-      border: 1px solid #0073e5;
+      border: 1px solid #3f51b5;
+      transition: all 0.3s ease;
       margin-left: 10px;
+    }
+    .checkout-button:hover {
+      background-color: #303f9f;
     }
     .subtotal {
       font-size: 24px;

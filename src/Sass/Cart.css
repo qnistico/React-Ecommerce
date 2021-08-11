@@ -3,8 +3,16 @@
 }
 
 .cart h1 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-weight: 800;
+}
+
+.cart h4 {
+  font-size: 16px;
+}
+
+.cart h5 {
+  font-size: 16px;
 }
 
 .cart button {
@@ -31,15 +39,27 @@
   background-color: #f10e0e;
   border: 1px solid #f10e0e;
   color: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
+}
+
+.cart .cart-bottom .empty-cart-button:hover {
+  background-color: #d10d0d;
 }
 
 .cart .cart-bottom .checkout-button {
   padding: 12px 20px;
-  background-color: #0073e5;
+  background-color: #3f51b5;
   color: #fff;
-  border: 1px solid #0073e5;
+  border: 1px solid #3f51b5;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   margin-left: 10px;
+}
+
+.cart .cart-bottom .checkout-button:hover {
+  background-color: #303f9f;
 }
 
 .cart .cart-bottom .subtotal {

@@ -151,7 +151,7 @@
 }
 
 .nav-item .active {
-  color: #0073e5;
+  color: #3f51b5;
 }
 
 .nav-cart {
@@ -180,7 +180,7 @@
   right: 0;
   top: 0;
   border-radius: 100px;
-  background-color: #0073e5;
+  background-color: #3f51b5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -228,7 +228,7 @@
 }
 
 .dropdown_item:hover {
-  background-color: #0073e5 !important;
+  background-color: #3f51b5 !important;
   color: white !important;
 }
 
