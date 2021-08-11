@@ -109,7 +109,13 @@
   color: #fff;
   border: 1px solid #3f51b5;
   font-weight: 700;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   border-radius: 100px;
+}
+
+.pdctdetails .pdctdetails-flex .pdctdetails-content .pdctdetails-add .add-to-cart:hover {
+  background-color: #303f9f;
 }
 
 .pdctdetails .product-line {

@@ -1,0 +1,97 @@
+.wsbanner {
+  width: 100%;
+  padding: 30px;
+  background: url(./customerservice.png);
+  background-size: cover;
+  background-position: center;
+  max-width: 1400px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.wsbanner .wsbanner-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  max-width: 1400px;
+  margin: auto;
+  padding: 60px 0;
+}
+
+.wsbanner .wsbanner-flex .wsbanner-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wsbanner .wsbanner-flex .wsbanner-header h2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.158);
+}
+
+.wsbanner .wsbanner-flex .wsbanner-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wsbanner .wsbanner-flex .wsbanner-items .wsbanner-item {
+  height: 250px;
+  width: 19%;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  position: relative;
+  border-radius: 8px;
+}
+
+.wsbanner .wsbanner-flex .wsbanner-items .wsbanner-item .MuiSvgIcon-root {
+  color: #3f51b5;
+  font-size: 60px;
+}
+
+.wsbanner .wsbanner-flex .wsbanner-items .wsbanner-item h3 {
+  font-size: 19px;
+  font-weight: 800;
+  margin-top: 5px;
+}
+
+.wsbanner .wsbanner-flex .wsbanner-items .wsbanner-item p {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .wsbanner-items {
+    overflow-x: scroll;
+    padding-bottom: 30px;
+  }
+  .wsbanner-item {
+    min-width: 250px;
+    margin-right: 20px;
+  }
+  .wsbanner-items::-webkit-scrollbar-thumb {
+    background-color: #f1f2f5 !important;
+  }
+}
+/*# sourceMappingURL=WhyShopBanner.css.map */
