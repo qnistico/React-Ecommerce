@@ -52,7 +52,7 @@ footer {
         }
         .footer-item {
             width: 20%;
-            padding: 20px;
+            padding: 20px 40px;
             .footer-item-padding {
                 padding: 20px 0;
             }
@@ -115,6 +115,7 @@ footer {
 @media screen and (max-width: 1055px) {
     .footer-flex {
         flex-flow: row wrap;
+        justify-content: space-between;
     }
     .footer-item {
         flex: 1 40%;
@@ -158,6 +159,12 @@ footer {
     .creditcards {
         img {
             width: 100%;
+        }
+    }
+    .footer-bottom-flex {
+        flex-flow: column-reverse;
+        .footer-bottom-icons {
+            padding-bottom: 10px;
         }
     }
 }

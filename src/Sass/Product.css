@@ -53,6 +53,8 @@
   -webkit-transition: all 0.32s ease;
   transition: all 0.32s ease;
   cursor: pointer;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .productcard .productcard-body .img-container img:hover {
@@ -139,5 +141,23 @@
 .productcard .productcard-body .productcard-content .add-to-cart:hover {
   background-color: #333;
   color: #f1f2f5;
+}
+
+@media screen and (max-width: 860px) {
+  .productcard-body {
+    width: 280px !important;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .productcard-body {
+    width: 230px !important;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .productcard-body {
+    width: 300px !important;
+  }
 }
 /*# sourceMappingURL=Product.css.map */

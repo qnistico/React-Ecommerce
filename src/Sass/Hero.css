@@ -50,7 +50,7 @@
   margin: auto;
 }
 
-@media screen and (max-width: 1022px) {
+@media screen and (max-width: 1020px) {
   .hero-responsive-header {
     margin-top: 60px;
     text-align: center;
@@ -91,6 +91,15 @@
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero-text {
+    margin-left: 20px !important;
+  }
+  .hero-text.mobileshow {
+    margin-left: 0 !important;
   }
 }
 /*# sourceMappingURL=Hero.css.map */

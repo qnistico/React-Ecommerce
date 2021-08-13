@@ -37,6 +37,7 @@
             height: 180px;
             transition: all 0.32s ease;
             cursor: pointer;
+            object-fit: cover;
         }
         img:hover {
             transform: scale(1.1);
@@ -103,4 +104,22 @@
         }
     }
     
+}
+
+@media screen and (max-width: 860px) {
+    .productcard-body {
+        width: 280px !important;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .productcard-body {
+        width: 230px !important;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .productcard-body {
+        width: 300px !important;
+    }
 }
