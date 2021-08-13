@@ -23,6 +23,24 @@ function Footer() {
             aliquip ex ea commodo consequat. Duis aute irure dolor.
           </p>
         </div>
+        <div className="footer-item footer-contactinfo">
+          <h3>Shop</h3>
+          <ul>
+            <li>
+              <a href="#!">Laptops</a>
+            </li>
+            <li>
+              <a href="#!">Mobile Phones</a>
+            </li>
+            <li>
+              <a href="#!">Keyboards</a>
+            </li>
+            <li>
+              <a href="#!">Headphones</a>
+            </li>
+            <li><a href="#!">Desk Appliances</a></li>
+          </ul>
+        </div>
         <div className="footer-item footer-customerservice">
           <h3>Customer Service</h3>
           <ul>
@@ -60,23 +78,7 @@ function Footer() {
             </li>
           </ul>
         </div>
-        <div className="footer-item footer-contactinfo">
-          <h3>Contact Us</h3>
-          <ul>
-            <li>
-              <a href="#!">Lorem, Lorem 12345, USA</a>
-            </li>
-            <li>
-              <a href="#!">(610)-123-4567</a>
-            </li>
-            <li>
-              <a href="#!">(610)-123-4567</a>
-            </li>
-            <li>
-              <a href="#!">example@gmail.com</a>
-            </li>
-          </ul>
-        </div>
+        
       </div>
       <div className="creditcards">
         <a href="http://www.credit-card-logos.com/">

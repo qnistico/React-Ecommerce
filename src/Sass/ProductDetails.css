@@ -141,4 +141,15 @@
   -webkit-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
           box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
 }
+
+@media screen and (max-width: 1380px) {
+  .pdctdetails .productcard-body {
+    margin: 10px;
+  }
+  .pdctdetails .product-line-flex {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+}
 /*# sourceMappingURL=ProductDetails.css.map */

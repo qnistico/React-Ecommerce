@@ -26,7 +26,7 @@
 }
 
 .mobilebanner .mobilebanner-flex .mobilebanner-content {
-  width: 100%;
+  min-width: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,6 +59,13 @@
   background-color: #333;
   color: #f1f2f5;
   border-color: #e6e6e6;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.mobilebanner .mobilebanner-flex .mobilebanner-content button:hover {
+  background-color: #e6e6e6;
+  color: #333;
 }
 
 .mobilebanner .mobilebanner-flex img {

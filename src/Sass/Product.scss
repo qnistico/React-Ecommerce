@@ -3,8 +3,9 @@
         display: flex;
         flex-flow: column;
         justify-content: center;
+        width: 260px;
         height: 100%;
-        margin: 10px;
+        margin-bottom: 24px;
         background-color: #fff;
         .productcard-overlay {
             padding: 5px 8px;
@@ -24,8 +25,7 @@
         }
         .img-container {
             width: 100%;
-            max-width: 260px;
-            max-height: 180px;
+            height: 180px;
             overflow: hidden;
             position: relative;
             transition: all 0.3s ease;
@@ -33,8 +33,8 @@
             
             
         img {
-            max-height: 180px;
-            max-width: 260px;
+            width: 100%;
+            height: 180px;
             transition: all 0.32s ease;
             cursor: pointer;
         }

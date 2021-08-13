@@ -5,32 +5,35 @@ import speaker1 from "./img/speaker2nobg.png";
 import speaker3 from "./img/speaker3nobg.png";
 import mouse1 from "./img/mouse2nobg.png";
 import earphones2 from "./img/earphones2nobg.png";
+import tablet1 from "./img/tablet1.png";
+
 
 function CardDouble(props) {
   return (
     <div className="card-double">
       <div className="card-double-flex">
-        <div className="card-double-body cdb1">
+      <div className="card-double-body cdb1">
           <SingleCard
-            sctop="XM4 Speakers"
-            scspan="Excellent sound. "
-            sch3="Headphones & Speakers"
-            scimg={speaker3}
+            sctop="Featured Product"
+            scspan="Apple iPad"
+            sch3="Mobile Convenience."
+            scimg={tablet1}
             scalt="speaker"
           />
         </div>
         <div className="card-double-body cdb2">
           <SingleCard
-            sctop="ZRX Parts"
-            scspan="Computer Parts. "
-            sch3="Mice & Keyboards"
-            scimg={earphones2}
+            sctop="Featured Product"
+            scspan="Desktop Speakers."
+            sch3="Excellent sound"
+            scimg={speaker3}
             scalt="speaker"
           />
         </div>
+        
         <div className="card-double-body cdb3">
         <SingleCard
-          sctop="ZRX Parts"
+          sctop="Featured Product"
           scspan="Computer Parts. "
           sch3="Mice & Keyboards"
           scimg={mouse1}

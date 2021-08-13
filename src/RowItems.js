@@ -15,7 +15,7 @@ import Product from "./Product";
 const RowItems = ({ products, onAddToCart }) => {
   return (
     <div className="row-items">
-      <h2>Scroll through our products</h2>
+      <h2>View Our Products</h2>
       <div className="product-line">
       <div className="product-line-flex">
       {products.map((product) => (

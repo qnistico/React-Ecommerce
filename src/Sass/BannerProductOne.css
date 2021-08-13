@@ -18,6 +18,7 @@
           align-items: center;
   margin: auto;
   margin-bottom: 30px;
+  margin-top: 6px;
 }
 
 .bp-1 .bp-1-flex {
@@ -36,7 +37,7 @@
 }
 
 .bp-1 .bp-1-flex img {
-  width: 650px;
+  width: 600px;
   -o-object-fit: cover;
      object-fit: cover;
 }

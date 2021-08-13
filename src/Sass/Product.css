@@ -9,8 +9,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 260px;
   height: 100%;
-  margin: 10px;
+  margin-bottom: 24px;
   background-color: #fff;
 }
 
@@ -38,8 +39,7 @@
 
 .productcard .productcard-body .img-container {
   width: 100%;
-  max-width: 260px;
-  max-height: 180px;
+  height: 180px;
   overflow: hidden;
   position: relative;
   -webkit-transition: all 0.3s ease;
@@ -48,8 +48,8 @@
 }
 
 .productcard .productcard-body .img-container img {
-  max-height: 180px;
-  max-width: 260px;
+  width: 100%;
+  height: 180px;
   -webkit-transition: all 0.32s ease;
   transition: all 0.32s ease;
   cursor: pointer;

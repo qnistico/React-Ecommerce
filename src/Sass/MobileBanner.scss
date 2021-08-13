@@ -16,7 +16,7 @@ height: 600px;
 padding: 0 40px 0 100px;
     margin: auto;
     .mobilebanner-content {
-        width: 100%;
+        min-width: 350px;
         display: flex;
         flex-flow: column;
         text-align: center;
@@ -39,6 +39,11 @@ padding: 0 40px 0 100px;
             background-color: #333;
             color: #f1f2f5;
             border-color: #e6e6e6;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background-color: #e6e6e6;
+            color: #333;
         }
     }
     img {
