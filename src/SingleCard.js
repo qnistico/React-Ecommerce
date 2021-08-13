@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Sass/SingleCard.scss";
+import { Link } from "react-router-dom";
 
 function SingleCard(props) {
     return (
@@ -9,7 +10,9 @@ function SingleCard(props) {
                     <p>{props.sctop}</p>
                     <h2><span className="color">{props.scspan}</span></h2>
                     <h3>{props.sch3}</h3>
+                    <Link to={props.sclink}>
                     <button className="hero-button">View</button>
+                    </Link>
                 </div>
                 <img src={props.scimg} alt={props.scalt} />
             </div>

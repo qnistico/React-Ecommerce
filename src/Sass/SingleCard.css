@@ -19,14 +19,18 @@
 .singlecard .singlecard-body .singlecard-content {
   text-align: center;
   max-width: 400px;
-  padding: 40px;
+  padding: 20px;
 }
 
-.singlecard .singlecard-body .singlecard-content h3 {
+.singlecard .singlecard-body .singlecard-content h2 {
   font-size: 24px;
   font-weight: 700;
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
+}
+
+.singlecard .singlecard-body .singlecard-content h3 {
+  margin-bottom: 20px;
 }
 
 .singlecard .singlecard-body .singlecard-content p {
@@ -39,7 +43,7 @@
 
 .singlecard .singlecard-body .singlecard-content .color {
   color: #2196f3;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 800;
 }
 

@@ -16,28 +16,31 @@ function CardDouble(props) {
           <SingleCard
             sctop="Featured Product"
             scspan="Apple iPad"
-            sch3="Mobile Convenience."
+            sch3="Mobile Convenience"
             scimg={tablet1}
             scalt="speaker"
+            sclink="/ProductDetails?id=prod_RyWOwmdnyGlnEa"
           />
         </div>
         <div className="card-double-body cdb2">
           <SingleCard
             sctop="Featured Product"
-            scspan="Desktop Speakers."
+            scspan="Desktop Speakers"
             sch3="Excellent sound"
             scimg={speaker3}
             scalt="speaker"
+            sclink="/ProductDetails?id=prod_Kvg9l6A2qb51bB"
           />
         </div>
         
         <div className="card-double-body cdb3">
         <SingleCard
           sctop="Featured Product"
-          scspan="Computer Parts. "
+          scspan="Computer Parts "
           sch3="Mice & Keyboards"
           scimg={mouse1}
           scalt="speaker"
+          sclink="/ProductDetails?id=prod_p6dP5g0BPkln7k"
         />
         </div>
       </div>
