@@ -1,6 +1,7 @@
 import React from "react";
 import "./Sass/MobileBanner.scss";
 import mobileoverlay from "./img/mobileoverlaymin.png";
+import mobilephone from "./img/mbnobgcrop.png";
 import { Link } from "react-router-dom";
 function MobileBanner() {
   return (
@@ -13,7 +14,8 @@ function MobileBanner() {
             <button className="hero-button">Shop Now</button>
             </Link>
         </div>
-        <img src={mobileoverlay} alt="" className="mobilephone-img" />
+        <img src={mobileoverlay} alt="" className="mobilephone-img mobilehide" />
+        <img src={mobilephone} alt="" className="mobileshow" />
       </div>
     </div>
   );

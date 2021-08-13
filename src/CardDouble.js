@@ -25,7 +25,7 @@ function CardDouble(props) {
         <div className="card-double-body cdb2">
           <SingleCard
             sctop="Featured Product"
-            scspan="Desktop Speakers"
+            scspan="Desk Speakers"
             sch3="Excellent sound"
             scimg={speaker3}
             scalt="speaker"

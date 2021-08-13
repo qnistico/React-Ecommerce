@@ -4,6 +4,7 @@
     .card-double-flex {
         display: flex;
         max-width: 1400px;
+        justify-content: center;
         margin: auto;
         .card-double-body {
             width: 33%;
@@ -17,6 +18,32 @@
         }
         .cdb3 {
             margin-left: 15px;
+        }
+    }
+    @media screen and (max-width: 1080px) {
+        .card-double-flex {
+            flex-flow: row wrap;
+            width: 90%;
+            .card-double-body {
+                flex: 1 40%;
+            }
+            .cdb2 {
+                margin-right: 0;
+            }
+            .cdb3 {
+                margin-left: 0;
+                margin-top: 30px;
+            }
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .card-double-flex {
+            flex-flow: column;
+            width: 100%;
+        }
+        .card-double-body {
+            width: 90% !important;
+            margin: auto auto 30px auto !important;
         }
     }
 }

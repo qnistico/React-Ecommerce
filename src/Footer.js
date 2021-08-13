@@ -16,7 +16,7 @@ function Footer() {
       <div className="footer-flex">
         <div className="footer-item footer-about">
           <h3>About Us</h3>
-          <p>
+          <p className="footer-item-padding">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -25,7 +25,7 @@ function Footer() {
         </div>
         <div className="footer-item footer-contactinfo">
           <h3>Shop</h3>
-          <ul>
+          <ul className="footer-item-padding">
             <li>
               <a href="#!">Laptops</a>
             </li>
@@ -43,7 +43,7 @@ function Footer() {
         </div>
         <div className="footer-item footer-customerservice">
           <h3>Customer Service</h3>
-          <ul>
+          <ul className="footer-item-padding">
             <li>
               <a href="#!">Help & FAQs</a>
             </li>
@@ -63,7 +63,7 @@ function Footer() {
         </div>
         <div className="footer-item footer-contactinfo">
           <h3>Contact Us</h3>
-          <ul>
+          <ul className="footer-item-padding">
             <li>
               <a href="#!">Lorem, Lorem 12345, USA</a>
             </li>

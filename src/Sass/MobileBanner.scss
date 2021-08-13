@@ -53,7 +53,34 @@ padding: 0 40px 0 100px;
         right: -40px;
         top: 40px;
     }
+    .mobileshow {
+        display: none;
+    }
     
 
+}
+}
+
+@media screen and (max-width: 1080px) {
+    .mobilebanner {
+        width: 90%;
+        h2 {
+            width: 650px;
+        }
+    .mobilebanner-flex {
+        flex-flow: column;
+        padding: 0 100px;
+        img {
+            width: 750px;
+            margin-right: 80px;
+            transform: rotate(7deg);
+        }
+        .mobileshow {
+            display: unset;
+        }
+        .mobilehide {
+            display: none;
+        }
+    }
 }
 }

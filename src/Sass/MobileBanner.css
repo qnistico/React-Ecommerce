@@ -76,4 +76,36 @@
   right: -40px;
   top: 40px;
 }
+
+.mobilebanner .mobilebanner-flex .mobileshow {
+  display: none;
+}
+
+@media screen and (max-width: 1080px) {
+  .mobilebanner {
+    width: 90%;
+  }
+  .mobilebanner h2 {
+    width: 650px;
+  }
+  .mobilebanner .mobilebanner-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    padding: 0 100px;
+  }
+  .mobilebanner .mobilebanner-flex img {
+    width: 750px;
+    margin-right: 80px;
+    -webkit-transform: rotate(7deg);
+            transform: rotate(7deg);
+  }
+  .mobilebanner .mobilebanner-flex .mobileshow {
+    display: unset;
+  }
+  .mobilebanner .mobilebanner-flex .mobilehide {
+    display: none;
+  }
+}
 /*# sourceMappingURL=MobileBanner.css.map */

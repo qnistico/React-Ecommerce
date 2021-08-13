@@ -64,4 +64,23 @@
   padding: 10px 40px;
   width: 156px;
 }
+
+@media screen and (max-width: 1080px) {
+  .bp-1 {
+    width: 90%;
+  }
+  .bp-1 h2 {
+    font-size: 36px !important;
+  }
+  .bp-1 .bp-1-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .bp-1 .bp-1-flex img {
+    width: 500px;
+    margin-top: 40px;
+  }
+}
 /*# sourceMappingURL=BannerProductOne.css.map */

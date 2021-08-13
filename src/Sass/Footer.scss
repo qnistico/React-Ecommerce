@@ -45,17 +45,20 @@ footer {
     .footer-flex {
         display: flex;
         max-width: 1400px;
+        justify-content: center;
         margin: auto;
         .footer-about {
-            min-width: 450px !important;
+            min-width: 350px !important;
         }
         .footer-item {
-            width: 25%;
-            padding: 0 40px;
+            width: 20%;
+            padding: 20px;
+            .footer-item-padding {
+                padding: 20px 0;
+            }
             h3 {
                 font-size: 18px;
                 font-weight: 800;
-                margin-bottom: 20px;
                 text-transform: uppercase;
             }
             p {
@@ -107,6 +110,55 @@ footer {
           margin-bottom: 0;
         }
       }
+    }
+}
+@media screen and (max-width: 1055px) {
+    .footer-flex {
+        flex-flow: row wrap;
+    }
+    .footer-item {
+        flex: 1 40%;
+    }
+}
+@media screen and (max-width: 769px) {
+    .footer-flex {
+        flex-flow: column;
+        align-items: center;
+        .footer-item {
+            width: 100%;
+            text-align: center;
+        }
+        .footer-about {
+            min-width: unset !important;
+        }
+    }
+}
+@media screen and (max-width: 665px) {
+    .footer-newsletter {
+        padding: 0 20px !important;
+        overflow: hidden;
+        h3, p {
+            text-align: center;
+        }
+        .form-group {
+            flex-flow: column;
+            align-items: center;
+            
+            input {
+                width: 90vw;
+                margin: auto !important;
+            }
+            button {
+                margin-top: 35px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 400px) {
+    .creditcards {
+        img {
+            width: 100%;
+        }
     }
 }
 }

@@ -67,22 +67,28 @@ footer .footer-flex {
   display: -ms-flexbox;
   display: flex;
   max-width: 1400px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: auto;
 }
 
 footer .footer-flex .footer-about {
-  min-width: 450px !important;
+  min-width: 350px !important;
 }
 
 footer .footer-flex .footer-item {
-  width: 25%;
-  padding: 0 40px;
+  width: 20%;
+  padding: 20px;
+}
+
+footer .footer-flex .footer-item .footer-item-padding {
+  padding: 20px 0;
 }
 
 footer .footer-flex .footer-item h3 {
   font-size: 18px;
   font-weight: 800;
-  margin-bottom: 20px;
   text-transform: uppercase;
 }
 
@@ -157,5 +163,70 @@ footer .footer-bottom .footer-bottom-flex .footer-bottom-icons a {
 footer .footer-bottom .footer-bottom-flex .footer-bottom-icons .MuiSvgIcon-root {
   margin-left: 5px;
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 1055px) {
+  footer .footer-flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  footer .footer-item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 40%;
+            flex: 1 40%;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  footer .footer-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer-flex .footer-item {
+    width: 100%;
+    text-align: center;
+  }
+  footer .footer-flex .footer-about {
+    min-width: unset !important;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  footer .footer-newsletter {
+    padding: 0 20px !important;
+    overflow: hidden;
+  }
+  footer .footer-newsletter h3, footer .footer-newsletter p {
+    text-align: center;
+  }
+  footer .footer-newsletter .form-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer-newsletter .form-group input {
+    width: 90vw;
+    margin: auto !important;
+  }
+  footer .footer-newsletter .form-group button {
+    margin-top: 35px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  footer .creditcards img {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=Footer.css.map */

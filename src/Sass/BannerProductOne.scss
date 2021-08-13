@@ -45,4 +45,21 @@
       }
     }
   }
+  
+}
+
+@media screen and (max-width: 1080px) {
+  .bp-1 {
+    width: 90%;
+    h2 {
+      font-size: 36px !important;
+    }
+  .bp-1-flex {
+    flex-flow: column;
+    img {
+      width: 500px;
+      margin-top: 40px;
+    }
+  }
+}
 }
