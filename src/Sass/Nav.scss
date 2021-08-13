@@ -111,6 +111,9 @@
   position: relative;
   padding: 5px;
   transition: all 0.32s ease;
+  .MuiSvgIcon-root {
+    color: #333;
+  }
   .cart-badge {
     font-size: 12px;
     font-weight: 700;
@@ -151,7 +154,7 @@
   }
 }
 
-.mobile_show {
+.mobileshow {
   display: none;
 }
 .dropdown_item {
@@ -239,14 +242,8 @@
       color: white;
     }
   }
-  .navbar {
-    .mobile_hide {
-      display: none;
-    }
-  }
-  .mobile_show {
-    display: block;
-  }
+  
+  
   .nav-menu {
     display: flex;
     flex-direction: column;
@@ -256,10 +253,10 @@
     top: 59px;
     left: -110%;
     opacity: 1;
-    background-color: #261e1c !important;
+    background-color: #fff !important;
     transition: all 0.5s ease;
     .nav-links {
-      color: #ad985f !important;
+      color: #333 !important;
     }
   }
   .nav-menu.active {
@@ -285,12 +282,12 @@
   .nav-icon {
     display: block;
     position: absolute;
-    top: -18.5px;
+    top: -11px;
     right: 0;
     transform: translate(-100%, 60%);
     font-size: 32px;
     cursor: pointer;
-    color: white;
+    color: #333;
   }
 }
 

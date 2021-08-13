@@ -98,17 +98,18 @@ function Nav({ totalItems }) {
                   Contact Us
                 </a>
               </li>
-              <li className="nav-item mobile_show">
-                <a
-                  className="nav-links cart_mobile"
-                  href="/#contact-us"
-                >
-                  
-                </a>
+              <li className="nav-item mobileshow">
+                <div className="nav-cart">
+                <Link to="/Cart">
+
+                  <ShoppingCartIcon />
+                  </Link>
+                  <div className="cart-badge">{totalItems}</div>
+                </div>
               </li>
             </ul>
             
-            <ul className="nav-menu-2 mobile_hide">
+            <ul className="nav-menu-2 mobilehide">
               <Link to="/Cart">
               <li className="nav-item">
                 <div className="nav-cart">

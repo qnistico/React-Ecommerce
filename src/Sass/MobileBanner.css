@@ -93,7 +93,7 @@
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
-    padding: 0 100px;
+    padding: 0;
   }
   .mobilebanner .mobilebanner-flex img {
     width: 750px;

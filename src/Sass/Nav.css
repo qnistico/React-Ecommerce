@@ -169,6 +169,10 @@
   transition: all 0.32s ease;
 }
 
+.nav-cart .MuiSvgIcon-root {
+  color: #333;
+}
+
 .nav-cart .cart-badge {
   font-size: 12px;
   font-weight: 700;
@@ -217,7 +221,7 @@
   color: #333 !important;
 }
 
-.mobile_show {
+.mobileshow {
   display: none;
 }
 
@@ -347,12 +351,6 @@
   .fix_nav .nav-icon {
     color: white;
   }
-  .navbar .mobile_hide {
-    display: none;
-  }
-  .mobile_show {
-    display: block;
-  }
   .nav-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -367,12 +365,12 @@
     top: 59px;
     left: -110%;
     opacity: 1;
-    background-color: #261e1c !important;
+    background-color: #fff !important;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
   .nav-menu .nav-links {
-    color: #ad985f !important;
+    color: #333 !important;
   }
   .nav-menu.active {
     background: white;
@@ -395,13 +393,13 @@
   .nav-icon {
     display: block;
     position: absolute;
-    top: -18.5px;
+    top: -11px;
     right: 0;
     -webkit-transform: translate(-100%, 60%);
             transform: translate(-100%, 60%);
     font-size: 32px;
     cursor: pointer;
-    color: white;
+    color: #333;
   }
 }
 
