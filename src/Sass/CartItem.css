@@ -90,4 +90,59 @@
 .cartitem .cartitem-flex .cartitem-content .remove-button:hover {
   background-color: #d10d0d;
 }
+
+@media screen and (max-width: 768px) {
+  .cartitem {
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+    margin: 10px;
+    padding-bottom: 60px;
+  }
+  .cartitem img {
+    width: 100% !important;
+  }
+  .cartitem h4 {
+    margin: 40px 0 10px 0 !important;
+    text-align: center;
+  }
+  .cartitem h5 {
+    margin: 10px 0;
+    text-align: center;
+  }
+  .cartitem .cartitem-plusminus-buttons {
+    margin: 0 0 10px 0;
+  }
+  .cartitem .cartitem-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .cartitem .cartitem-flex .cartitem-content {
+    width: 200px !important;
+    border-left: none;
+  }
+  .cartitem .cartitem-flex .cartitem-content .cartitem-content-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .cart-bottom {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .cartitem {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .cartitem {
+    width: 90vw;
+  }
+}
 /*# sourceMappingURL=CartItem.css.map */

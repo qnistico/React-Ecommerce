@@ -13,9 +13,11 @@ import RowItems from "./RowItems";
 import ScrollToTop from "./ScrollToTop";
 import Footer from "./Footer";
 import Checkout from "./CheckoutForm/Checkout/Checkout";
+import Categories from "./Categories";
 const App = () => {
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const [products, setProducts] = useState([]);
+  const [categories, setCategories] = useState([]);
   const [cart, setCart] = useState({});
   const [order, setOrder] = useState({});
   const [errorMessage, setErrorMessage] = useState('');
@@ -24,6 +26,12 @@ const App = () => {
     const { data } = await commerce.products.list();
 
     setProducts(data);
+  };
+
+  const fetchCategories = async () => {
+    const { data } = await commerce.categories.list();
+
+    setCategories(data);
   };
 
   const fetchCart = async () => {
@@ -74,6 +82,7 @@ const App = () => {
 
   useEffect(() => {
     fetchProducts();
+    fetchCategories();
     fetchCart();
   }, []);
 
@@ -105,6 +114,9 @@ const App = () => {
           </Route>
           <Route exact path="/Checkout">
           <Checkout cart={cart} order={order} onCaptureCheckout={handleCaptureCheckout} error={errorMessage} />
+          </Route>
+          <Route exact path="/Categories/:category_id">
+            <Categories products={products} categories={categories} />
           </Route>
         </Switch>
         <Footer />

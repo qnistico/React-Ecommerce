@@ -17,7 +17,7 @@ const Cart = ({
   );
   const CartAdded = () => (
     <>
-      <div>
+      <div className="cartflex">
         {cart.line_items.map((item) => (
           <div key={item.id}>
             <CartItem
@@ -32,7 +32,7 @@ const Cart = ({
         <p className="subtotal">
           Subtotal: {cart.subtotal.formatted_with_symbol}
         </p>
-        <div>
+        <div className="cart-buttons">
           <button
             className="empty-cart-button"
             type="button"

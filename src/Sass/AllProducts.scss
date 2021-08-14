@@ -1,15 +1,7 @@
-.allproducts {
-    width: 100%;
-padding-top: 100px;
-    .allproducts-flex {
-        display: flex;
-        justify-content: center;
-        flex-flow: row wrap;
-        max-width: 1400px;
-        margin: auto;
-        .product-card {
-            width: 20%;
-            min-width: 280px;
-        }
+.all-products {
+    padding-top: 100px !important;
+    h2 {
+        display: none;
     }
 }
+

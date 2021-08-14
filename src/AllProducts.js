@@ -15,14 +15,17 @@ import "./Sass/AllProducts.scss";
 const AllProducts = ({ products, onAddToCart }) => {
   console.log(products);
   return (
-    <div className="allproducts">
-      <div className="allproducts-flex">
-        {products.map((product) => (
+    <div className="row-items all-products">
+      <h2>View Our Products</h2>
+      <div className="product-line">
+      <div className="product-line-flex">
+      {products.map((product) => (
           <div className="product-card" key={product.id}>
             <Product product={product} onAddToCart={onAddToCart} />
           </div>
         ))}
-      </div>
+        </div>
+  </div>
     </div>
   );
 };

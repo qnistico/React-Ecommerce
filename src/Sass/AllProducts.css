@@ -1,25 +1,8 @@
-.allproducts {
-  width: 100%;
-  padding-top: 100px;
+.all-products {
+  padding-top: 100px !important;
 }
 
-.allproducts .allproducts-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  max-width: 1400px;
-  margin: auto;
-}
-
-.allproducts .allproducts-flex .product-card {
-  width: 20%;
-  min-width: 280px;
+.all-products h2 {
+  display: none;
 }
 /*# sourceMappingURL=AllProducts.css.map */

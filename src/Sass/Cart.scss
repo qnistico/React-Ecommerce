@@ -49,3 +49,36 @@
     }
   } 
 }
+
+@media screen and (max-width: 576px) {
+  .cart-bottom {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    .subtotal {
+      margin-bottom: 20px;
+    }
+  }
+  .cart-buttons {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    button {
+      width: 200px;
+    }
+    .empty-cart-button {
+      margin-bottom: 10px;
+    }
+    .checkout-button {
+      margin-left: 0 !important;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cartflex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+}

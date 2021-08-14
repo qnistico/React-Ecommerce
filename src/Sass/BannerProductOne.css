@@ -46,6 +46,7 @@
   width: 40%;
   min-width: 500px;
   text-align: center;
+  padding: 0 20px;
 }
 
 .bp-1 .bp-1-flex .bp-1-content h2 {
@@ -68,6 +69,7 @@
 @media screen and (max-width: 1080px) {
   .bp-1 {
     width: 90%;
+    margin-top: 18px;
   }
   .bp-1 h2 {
     font-size: 36px !important;
@@ -81,6 +83,20 @@
   .bp-1 .bp-1-flex img {
     width: 500px;
     margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .bp-1 .bp-1-content {
+    width: 100% !important;
+    min-width: unset !important;
+  }
+  .bp-1 .bp-1-content h2 {
+    max-width: 100% !important;
+    margin: auto;
+  }
+  .bp-1 img {
+    width: 100% !important;
   }
 }
 /*# sourceMappingURL=BannerProductOne.css.map */

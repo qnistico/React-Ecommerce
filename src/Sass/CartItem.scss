@@ -60,3 +60,54 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .cartitem {
+        width: 250px;
+        height: 100%;
+        background-color: #fff;
+        margin: 10px;
+        padding-bottom: 60px;
+        img {
+            width: 100% !important;
+        }
+        h4 {
+            margin: 40px 0 10px 0 !important;
+            text-align: center;
+        }
+        h5 {
+            margin: 10px 0;
+            text-align: center;
+        }
+        .cartitem-plusminus-buttons {
+            margin: 0 0 10px 0;
+        }
+    .cartitem-flex {
+        flex-flow: column;
+        .cartitem-content {
+            width: 200px !important;
+            border-left: none;
+        .cartitem-content-flex {
+            flex-flow: column;
+        }
+    }
+    }
+}
+.cart-bottom {
+    margin-top: 40px;
+}
+}
+
+@media screen and (max-width: 620px) {
+    .cartitem {
+        width: 200px;
+    }
+}
+
+
+
+@media screen and (max-width: 520px) {
+    .cartitem {
+        width: 90vw;
+    }
+}

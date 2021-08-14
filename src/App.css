@@ -70,4 +70,10 @@ button {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #444;
 }
+
+@media screen and (max-width: 281px) {
+  .productcard-body {
+    max-width: 250px !important;
+  }
+}
 /*# sourceMappingURL=App.css.map */

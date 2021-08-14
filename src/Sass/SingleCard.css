@@ -50,5 +50,7 @@
 .singlecard .singlecard-body img {
   width: 100%;
   height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=SingleCard.css.map */
