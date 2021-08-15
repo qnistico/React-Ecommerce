@@ -87,6 +87,9 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .hero {
+    max-height: 62vh;
+  }
   .hero-text {
     margin-left: 20px !important;
   }

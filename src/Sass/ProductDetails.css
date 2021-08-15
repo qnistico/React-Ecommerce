@@ -131,6 +131,11 @@
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
   overflow-x: scroll;
+  padding-top: 24px;
+}
+
+.pdctdetails .product-line .product-line-flex .productcard-body {
+  margin-right: 24px;
 }
 
 .pdctdetails .product-line .product-line-flex::-webkit-scrollbar {
@@ -140,5 +145,17 @@
 .pdctdetails .zoom-img {
   -webkit-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
           box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 991px) {
+  .pdctdetails-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
+  }
+  .pdctdetails-flex .add-to-cart {
+    margin-bottom: 20px;
+  }
 }
 /*# sourceMappingURL=ProductDetails.css.map */

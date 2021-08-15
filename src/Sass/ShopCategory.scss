@@ -36,10 +36,10 @@ h3 {
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: 0 0 31px 0 rgba(7, 152, 255,  0.2);
+        box-shadow: 0 0 18px 0 rgba(7, 152, 255,  0.2);
 
         overflow: hidden;
-        transition: all 0.3s ease;
+        transition: all 0.5s ease;
         cursor: pointer;
         
         .img1 {
@@ -67,4 +67,28 @@ h3 {
 
   }
   
+}
+
+@media screen and (max-width: 1024px) {
+    .shopcategory-flex {
+        flex-flow: row wrap;
+        justify-content: center !important;
+        h3 {
+            margin-bottom: 20px;
+        }
+        .shopcategory-item {
+            width: 300px;
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .shopcategory-flex {
+        flex-flow: column !important;
+        justify-content: center;
+        align-items: center;
+        h3 {
+            margin-bottom: 20px;
+        }
+    }
 }

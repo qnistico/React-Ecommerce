@@ -87,7 +87,10 @@
         display: flex;
         flex-flow: row nowrap;
         overflow-x: scroll;
-        
+        padding-top: 24px;
+        .productcard-body {
+            margin-right: 24px;
+        }
     }
     .product-line-flex::-webkit-scrollbar {
         height: 13px;
@@ -100,6 +103,12 @@
 
 }
 
-@media screen and (max-width: 768px) {
-    
+@media screen and (max-width: 991px) {
+    .pdctdetails-flex {
+        flex-flow: column-reverse;
+        .add-to-cart {
+            margin-bottom: 20px;
+        }
+    }
+
 }
