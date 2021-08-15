@@ -76,3 +76,13 @@ background-color: transparent;
     max-width: 250px !important;
   }
 }
+
+.categories-flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 200px 100px;
+  .category-productcard {
+    margin: 12px;
+  }
+}

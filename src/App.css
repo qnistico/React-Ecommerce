@@ -76,4 +76,22 @@ button {
     max-width: 250px !important;
   }
 }
+
+.categories-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 200px 100px;
+}
+
+.categories-flex .category-productcard {
+  margin: 12px;
+}
 /*# sourceMappingURL=App.css.map */

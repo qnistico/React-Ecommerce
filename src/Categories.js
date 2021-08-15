@@ -17,9 +17,9 @@ const Categories = ({ categories, products, onAddToCart }) => {
   };
 
   console.log(categories);
-  return <div>
+  return <div className="categories-flex">
       {getProductsByCategory().map((product) => (
-      <div className="product-card" key={product.id}>
+      <div className="product-card category-productcard" key={product.id}>
           <Product product={product} onAddToCart={onAddToCart} />
       </div>
       ))}
