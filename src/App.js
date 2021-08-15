@@ -115,7 +115,7 @@ const App = () => {
           <Route exact path="/Checkout">
           <Checkout cart={cart} order={order} onCaptureCheckout={handleCaptureCheckout} error={errorMessage} />
           </Route>
-          <Route exact path="/Categories/:category_id">
+          <Route exact path="/category/:category_id">
             <Categories products={products} categories={categories} />
           </Route>
         </Switch>

@@ -12,7 +12,7 @@ function BannerProductOne() {
             <div className="bp-1-content">
                 <p>Macbook Laptop</p>
                 <h2>Macbook laptop Lorem</h2>
-                <button className="hero-button" onClick={() => history.push("/Categories?id=cat_LvJjoPb3Ele0nO")}>View</button>
+                <button className="hero-button" onClick={() => history.push("/category/cat_VKXmwDejDorgDA")}>View</button>
             </div>
             <img src={laptop1} alt="" />
             

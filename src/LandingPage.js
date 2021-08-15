@@ -9,6 +9,7 @@ import { commerce } from "./Library/commerce";
 import MobileBanner from './MobileBanner';
 import Footer from './Footer';
 import WhyShopBanner from './WhyShopBanner';
+import ShopCategory from './ShopCategory';
 
 
 
@@ -48,6 +49,8 @@ function LandingPage({ onAddToCart, products }) {
             <Hero />
             <RowItems products={products} onAddToCart={onAddToCart} />
             <BannerProductOne />
+            <ShopCategory />
+
             <CardDouble />
             <WhyShopBanner />
             <MobileBanner />
