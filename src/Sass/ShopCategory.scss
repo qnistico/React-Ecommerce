@@ -11,7 +11,7 @@
   .shopcategory-flex {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
     max-width: 1400px;
     margin: auto;
     .shopcategory-item:hover .shopcategory-circle {
@@ -20,6 +20,7 @@
     .shopcategory-item {
       display: flex;
       flex-flow: column;
+      margin: 0 15px;
       justify-content: center;
       align-items: center;
 h3 {
@@ -69,21 +70,22 @@ h3 {
   
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1170px) {
     .shopcategory-flex {
         flex-flow: row wrap;
         justify-content: center !important;
-        h3 {
-            margin-bottom: 20px;
-        }
+        
         .shopcategory-item {
-            width: 300px;   
+            width: 300px;  
+            h3 {
+                margin-bottom: 20px !important;
+            } 
         }
     }
 }
 
 @media screen and (max-width: 520px) {
-    .shopcategory {}
+    
 }
 
 @media screen and (max-width: 420px) {
@@ -91,8 +93,6 @@ h3 {
         flex-flow: column !important;
         justify-content: center;
         align-items: center;
-        h3 {
-            margin-bottom: 20px;
-        }
+        
     }
 }

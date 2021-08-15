@@ -56,7 +56,7 @@ function Hero() {
     <div className="hero-responsive-header">
       <div className="hero-text mobileshow">
           <p>Get up to 50% off on all products this this weekend!</p>
-          <h1>Experience pristine sound</h1>
+          <h1>Affordable Technology Products</h1>
           <Link to="/AllProducts">
             <button className="hero-button">View All Products</button>
           </Link>
@@ -65,7 +65,7 @@ function Hero() {
       <div className="hero-flex">
         <div className="hero-text mobilehide">
           <p>Get up to 50% off on all products this this weekend!</p>
-          <h1>Experience pristine sound</h1>
+          <h1>Affordable Technology Products</h1>
           <Link to="/AllProducts">
             <button className="hero-button">View All Products</button>
           </Link>

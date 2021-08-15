@@ -306,9 +306,18 @@
     position: relative;
     left: -62px;
   }
+  .mobilehide {
+    display: none !important;
+  }
 }
 
   .navbar {
     top: 0;
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .nav-logo {
+    padding-left: 10px;
   }
 }
