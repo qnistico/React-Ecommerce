@@ -134,7 +134,6 @@
 @media screen and (max-width: 520px) {
     .pdctdetails {
         .productcard {
-            margin-right: 0 !important;
         }
     }
 }
@@ -150,6 +149,7 @@
             margin-bottom: 20px;
         }
     }
+    .pdctdetails {
     .product-line {
         padding: 0 !important;
         .productcard {
@@ -162,5 +162,6 @@
             }
         }
     }
+}
 
 }

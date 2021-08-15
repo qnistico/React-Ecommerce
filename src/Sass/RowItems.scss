@@ -35,9 +35,20 @@
 }
 
 @media screen and (max-width: 520px) {
+    .row-items {
+        .productcard {
+            margin: 0 !important;
+            .productcard-body {
+                width: 260px !important;
+                margin-right: 14px;
+            }
+        }
     .product-line-flex {
-        flex-flow: column !important;
-        align-items: center;
+        flex-flow: row nowrap !important;
+        overflow-x: scroll;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
     }
+}
 }
 

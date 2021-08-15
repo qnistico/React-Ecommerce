@@ -77,9 +77,13 @@ h3 {
             margin-bottom: 20px;
         }
         .shopcategory-item {
-            width: 300px;
+            width: 300px;   
         }
     }
+}
+
+@media screen and (max-width: 520px) {
+    .shopcategory {}
 }
 
 @media screen and (max-width: 420px) {
