@@ -12,7 +12,7 @@ const ShopCategory = () => {
     <div className="shopcategory">
         <h2>Shop By Category</h2>
       <div className="shopcategory-flex">
-          <Link to="/category/cat_RqEv5xnGewZz4j">
+          <Link to="/category/cat_RqEv5xnGewZz4j" style={{ textDecoration: 'none' }}>
         <div className="shopcategory-item">
             <div className="shopcategory-circle">
           <img src={speaker} alt="" className="img1"></img>
@@ -20,7 +20,7 @@ const ShopCategory = () => {
           <h3>Sound & Audio</h3>
         </div>
         </Link>
-        <Link to="/category/cat_LvJjoPb3Ele0nO">
+        <Link to="/category/cat_LvJjoPb3Ele0nO" style={{ textDecoration: 'none' }}>
         <div className="shopcategory-item">
             <div className="shopcategory-circle">
           <img src={computermonitor} alt="" className="img2"></img>
@@ -28,7 +28,7 @@ const ShopCategory = () => {
           <h3>Computers & Monitors</h3>
         </div>
         </Link>
-        <Link to="category/cat_8XxzoBz1NoPQAZ">
+        <Link to="category/cat_8XxzoBz1NoPQAZ" style={{ textDecoration: 'none' }}>
         <div className="shopcategory-item">
             <div className="shopcategory-circle">
           <img src={keyboard} alt="" className="img3"></img>
@@ -36,7 +36,7 @@ const ShopCategory = () => {
           <h3>Mice & Keyboards</h3>
         </div>
         </Link>
-        <Link to="category/cat_VKXmwDejDorgDA">
+        <Link to="category/cat_VKXmwDejDorgDA" style={{ textDecoration: 'none' }}>
         <div className="shopcategory-item">
             <div className="shopcategory-circle">
           <img src={tablet} alt="" className="img4"></img>
@@ -44,7 +44,7 @@ const ShopCategory = () => {
           <h3>Tablets & Phones</h3>
         </div>
         </Link>
-        <Link to="category/cat_eN1ql9G8Yoz3ym">
+        <Link to="category/cat_eN1ql9G8Yoz3ym" style={{ textDecoration: 'none' }}>
         <div className="shopcategory-item">
             <div className="shopcategory-circle">
           <img src={lamp} alt="" className="img5"></img>

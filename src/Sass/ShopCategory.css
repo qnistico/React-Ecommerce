@@ -1,5 +1,6 @@
 .shopcategory {
   width: 100%;
+  padding: 100px 0;
   margin-bottom: 30px;
 }
 
@@ -14,6 +15,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -69,7 +74,7 @@
 
 .shopcategory .shopcategory-flex .shopcategory-item .shopcategory-circle .img2 {
   width: 200px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .shopcategory .shopcategory-flex .shopcategory-item .shopcategory-circle .img3 {
