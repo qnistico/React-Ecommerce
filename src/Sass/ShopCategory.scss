@@ -15,7 +15,7 @@
     max-width: 1400px;
     margin: auto;
     .shopcategory-item:hover .shopcategory-circle {
-        box-shadow: 0 0 12px 5px #0072e548;
+        box-shadow: 0 0 45px 0 rgba(7, 152, 255,  0.5);
     }
     .shopcategory-item {
       display: flex;
@@ -36,8 +36,8 @@ h3 {
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: 0 0 12px 0 #0072e52f;
-        border: 1px solid #d1d1d1;
+        box-shadow: 0 0 31px 0 rgba(7, 152, 255,  0.2);
+
         overflow: hidden;
         transition: all 0.3s ease;
         cursor: pointer;
