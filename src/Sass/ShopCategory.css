@@ -7,7 +7,7 @@
 .shopcategory h2 {
   font-size: 28px;
   max-width: 1400px;
-  margin: auto auto 30px auto;
+  margin: auto auto 40px auto;
   text-align: center;
 }
 
@@ -24,6 +24,11 @@
           justify-content: space-between;
   max-width: 1400px;
   margin: auto;
+}
+
+.shopcategory .shopcategory-flex .shopcategory-item:hover .shopcategory-circle {
+  -webkit-box-shadow: 0 0 12px 5px #0072e550;
+          box-shadow: 0 0 12px 5px #0072e550;
 }
 
 .shopcategory .shopcategory-flex .shopcategory-item {
@@ -61,10 +66,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 0 0 12px 0px rgba(70, 48, 48, 0.131);
-          box-shadow: 0 0 12px 0px rgba(70, 48, 48, 0.131);
+  -webkit-box-shadow: 0 0 12px 0 #0072e52f;
+          box-shadow: 0 0 12px 0 #0072e52f;
   border: 1px solid #d1d1d1;
   overflow: hidden;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 
