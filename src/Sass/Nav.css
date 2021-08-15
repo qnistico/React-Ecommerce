@@ -351,6 +351,12 @@
   .fix_nav .nav-icon {
     color: white;
   }
+  .navbar .mobile_hide {
+    display: none;
+  }
+  .mobile_show {
+    display: block;
+  }
   .nav-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -406,6 +412,10 @@
 @media screen and (max-width: 991.98px) {
   .topnav {
     display: none;
+  }
+  .navbar .mobileshow {
+    position: relative;
+    left: -62px;
   }
   .navbar {
     top: 0;

@@ -242,8 +242,14 @@
       color: white;
     }
   }
-  
-  
+  .navbar {
+    .mobile_hide {
+      display: none;
+    }
+  }
+  .mobile_show {
+    display: block;
+  }
   .nav-menu {
     display: flex;
     flex-direction: column;
@@ -295,6 +301,12 @@
   .topnav {
     display: none;
   }
+.navbar {
+  .mobileshow {
+    position: relative;
+    left: -62px;
+  }
+}
 
   .navbar {
     top: 0;

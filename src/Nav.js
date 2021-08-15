@@ -5,7 +5,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 import PhoneIcon from "@material-ui/icons/Phone";
 import QueryBuilderIcon from "@material-ui/icons/QueryBuilder";
-import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import logo from "./img/logo.png";
 
@@ -36,7 +36,7 @@ function Nav({ totalItems }) {
   return (
     <div>
       <>
-      {/*
+        {/*
         <div className="topnav">
           <div className="topnav-flex">
             <div className="topnav-flex-item topnav-address">
@@ -71,6 +71,7 @@ function Nav({ totalItems }) {
             <a href="/">
               <img src={logo} alt="" className="nav-logo" />
             </a>
+            
             <ul className={click ? "nav-menu active" : "nav-menu"}>
               <li className="nav-item">
                 <a href="/AllProducts" className="nav-links">
@@ -98,33 +99,32 @@ function Nav({ totalItems }) {
                   Contact Us
                 </a>
               </li>
-              <li className="nav-item mobileshow">
-                <div className="nav-cart">
-                <Link to="/Cart">
-
-                  <ShoppingCartIcon />
-                  </Link>
-                  <div className="cart-badge">{totalItems}</div>
-                </div>
-              </li>
             </ul>
-            
+
             <ul className="nav-menu-2 mobilehide">
               <Link to="/Cart">
-              <li className="nav-item">
-                <div className="nav-cart">
-                   
-                  <ShoppingCartIcon />
-                  <div className="cart-badge">{totalItems}</div>
-                </div>
-              </li>
+                <li className="nav-item">
+                  <div className="nav-cart">
+                    <ShoppingCartIcon />
+                    <div className="cart-badge">{totalItems}</div>
+                  </div>
+                </li>
               </Link>
             </ul>
-                  
+              
+
             <div className="nav-icon" onClick={handleClick}>
               <MenuIcon />
             </div>
           </div>
+          <Link to="/Cart">
+                <div className="nav-item mobileshow">
+                <div className="nav-links nav-cart">
+                  <ShoppingCartIcon />
+                  <div className="cart-badge">{totalItems}</div>
+                </div>
+                </div>
+              </Link>
         </nav>
       </>
     </div>
