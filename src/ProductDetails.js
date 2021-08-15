@@ -37,6 +37,7 @@ function ProductDetails({ product, products, onAddToCart }) {
             hoverDelayInMs="0"
             shouldUsePositiveSpaceLens="true"
             enlargedImageContainerClassName="zoom-img"
+            enlargedImagePosition="over"
 
             {...{
               smallImage: {
@@ -92,6 +93,7 @@ function ProductDetails({ product, products, onAddToCart }) {
             >
               Add to Cart
             </button>
+            
           </div>
         </div>
       </div>

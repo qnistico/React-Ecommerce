@@ -73,7 +73,7 @@ button {
 
 @media screen and (max-width: 281px) {
   .productcard-body {
-    max-width: 250px !important;
+    max-width: 260px !important;
   }
 }
 

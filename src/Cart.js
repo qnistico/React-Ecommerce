@@ -46,6 +46,7 @@ const Cart = ({
             </button>
           </Link>
         </div>
+        
       </div>
     </>
   );

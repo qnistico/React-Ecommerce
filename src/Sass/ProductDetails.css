@@ -43,6 +43,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-right: 20px;
   margin-bottom: 20px;
 }
 
@@ -122,6 +123,11 @@
   padding: 20px 30px;
 }
 
+.pdctdetails .product-line h2 {
+  max-width: 1400px;
+  margin: auto;
+}
+
 .pdctdetails .product-line .product-line-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -132,6 +138,8 @@
           flex-flow: row nowrap;
   overflow-x: scroll;
   padding-top: 24px;
+  max-width: 1400px;
+  margin: auto;
 }
 
 .pdctdetails .product-line .product-line-flex .productcard-body {
@@ -147,6 +155,41 @@
           box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
 }
 
+@media screen and (max-width: 425px) {
+  .pdctdetails h2 {
+    text-align: center;
+  }
+  .pdctdetails .pdctdetails-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .stars {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  .stars .items-sold {
+    margin-top: 11px;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .pdctdetails .productcard {
+    margin-right: 0 !important;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .pdctdetails-flex {
     -webkit-box-orient: vertical;
@@ -154,8 +197,23 @@
         -ms-flex-flow: column-reverse;
             flex-flow: column-reverse;
   }
+  .pdctdetails-flex .pdctdetails-content {
+    margin-left: 0 !important;
+    padding: 0 20px;
+  }
   .pdctdetails-flex .add-to-cart {
     margin-bottom: 20px;
+  }
+  .product-line {
+    padding: 0 !important;
+  }
+  .product-line .productcard {
+    width: 260px !important;
+    margin-right: 24px;
+  }
+  .product-line .productcard .productcard-body {
+    width: 260px !important;
+    margin: 0 20px 20px 0 !important;
   }
 }
 /*# sourceMappingURL=ProductDetails.css.map */
