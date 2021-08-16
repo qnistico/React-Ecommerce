@@ -23,6 +23,7 @@ function ProductDetails({ products, onAddToCart, items, onUpdateCartQty }) {
   const [pdctId, setPdctId] = useState("");
   const [currLineItem, setCurrLineItem] = useState('');
 
+  const [currQty, setCurrQty] = useState(1);
 
   useEffect(() => {
     const tempPdctId = new URLSearchParams(location.search).get("id");
@@ -34,6 +35,15 @@ function ProductDetails({ products, onAddToCart, items, onUpdateCartQty }) {
     }
 
   }, [location, products, items]);
+
+  const updateQty = (operation) => {
+    const updatedQty = operation === 'add' ? currQty + 1 : currQty - 1;
+    if(updatedQty < 1){
+      setCurrQty(1);
+    }else{
+      setCurrQty(updatedQty);
+    }
+  }
 
   return (
     <div className="pdctdetails">
@@ -96,16 +106,15 @@ function ProductDetails({ products, onAddToCart, items, onUpdateCartQty }) {
               <button
                 type="button"
                 className="minus-button"
-                onClick={() => onUpdateCartQty(pdctId, 'remove')}
-                disabled={!currLineItem}
+                onClick={() => updateQty('remove')}
               >
                 -
               </button>
-              <div>{currLineItem ? currLineItem.quantity : 1}</div>
+              <div>{currQty}</div>
               <button
                 type="button"
                 className="plus-button"
-                onClick={() => onUpdateCartQty(pdctId, 'add')}
+                onClick={() => updateQty('add')}
               >
                 +
               </button>
@@ -113,7 +122,7 @@ function ProductDetails({ products, onAddToCart, items, onUpdateCartQty }) {
           <div className="pdctdetails-add">
             <button
               className="add-to-cart"
-              onClick={() => onAddToCart(pdctId, 1)}
+              onClick={() => onAddToCart(pdctId, currQty)}
             >
               Add to Cart What the heck
             </button>
