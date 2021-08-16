@@ -37,12 +37,11 @@ function ProductDetails({ products, onAddToCart, items, onUpdateCartQty }) {
   }, [location, products, items]);
 
   const updateQty = (operation) => {
-    const updatedQty = operation === 'add' ? currQty + 1 : currQty - 1;
+    let updatedQty = operation === 'add' ? currQty + 1 : currQty - 1;
     if(updatedQty < 1){
-      setCurrQty(1);
-    }else{
-      setCurrQty(updatedQty);
+      updatedQty = 1
     }
+      setCurrQty(updatedQty);
   }
 
   return (
