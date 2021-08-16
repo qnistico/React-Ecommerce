@@ -45,7 +45,6 @@ function ProductDetails({ products, onAddToCart, items, onUpdateCartQty }) {
             shouldUsePositiveSpaceLens="true"
             enlargedImageContainerClassName="zoom-img"
             enlargedImagePosition="over"
-
             {...{
               smallImage: {
                 isFluidWidth: true,
@@ -114,7 +113,7 @@ function ProductDetails({ products, onAddToCart, items, onUpdateCartQty }) {
           <div className="pdctdetails-add">
             <button
               className="add-to-cart"
-              onClick={() => onAddToCart(pdctId?.id, 1)}
+              onClick={() => onAddToCart(pdctId, 1)}
             >
               Add to Cart What the heck
             </button>
