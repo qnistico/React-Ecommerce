@@ -104,6 +104,31 @@
   font-size: 14px;
 }
 
+.pdctdetails .pdctdetails-flex .pdctdetails-content .pdctdetails-add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pdctdetails .pdctdetails-flex .pdctdetails-content .pdctdetails-add .cartitem-plusminus-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pdctdetails .pdctdetails-flex .pdctdetails-content .pdctdetails-add .cartitem-plusminus-buttons .minus-button, .pdctdetails .pdctdetails-flex .pdctdetails-content .pdctdetails-add .cartitem-plusminus-buttons .plus-button {
+  width: 40px;
+  height: 40px;
+  font-size: 19px;
+  padding: 5px;
+  background-color: #fff;
+  border: 1px solid #d1d1d1;
+  margin: 8px;
+}
+
 .pdctdetails .pdctdetails-flex .pdctdetails-content .pdctdetails-add .add-to-cart {
   padding: 12px 20px;
   background-color: #3f51b5;
@@ -113,6 +138,7 @@
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   border-radius: 100px;
+  min-width: 200px;
 }
 
 .pdctdetails .pdctdetails-flex .pdctdetails-content .pdctdetails-add .add-to-cart:hover {

@@ -102,6 +102,8 @@ function ProductDetails({ products, onAddToCart, items, onUpdateCartQty }) {
               dangerouslySetInnerHTML={{ __html: pdctItem?.description }}
             ></p>
           </div>
+          
+          <div className="pdctdetails-add">
           <div className="cartitem-plusminus-buttons">
               <button
                 type="button"
@@ -119,12 +121,11 @@ function ProductDetails({ products, onAddToCart, items, onUpdateCartQty }) {
                 +
               </button>
             </div>
-          <div className="pdctdetails-add">
             <button
               className="add-to-cart"
               onClick={() => onAddToCart(pdctId, currQty)}
             >
-              Add to Cart What the heck
+              Add to Cart
             </button>
             
           </div>

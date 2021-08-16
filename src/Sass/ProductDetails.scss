@@ -20,6 +20,7 @@
                 font-weight: 800;
                 margin-bottom: 20px;
             }
+            
             .stars {
                 display: flex;
                 align-items: center;
@@ -67,6 +68,21 @@
                 }
             }
             .pdctdetails-add {
+                display: flex;
+                .cartitem-plusminus-buttons {
+                    display: flex;
+                    align-items: center;
+                    .minus-button, .plus-button {
+                        width: 40px;
+                        height: 40px;
+                        font-size: 19px;
+                        padding: 5px;
+                        background-color: #fff;
+                        border: 1px solid #d1d1d1;
+                        margin: 8px;
+                    }
+                    
+                }
                 .add-to-cart {
                     padding: 12px 20px;
                     background-color: #3f51b5;
@@ -75,6 +91,7 @@
                     font-weight: 700;
                     transition: all 0.3s ease;
                     border-radius: 100px;
+                    min-width: 200px;
                 }
                 .add-to-cart:hover {
                     background-color: #303f9f;
