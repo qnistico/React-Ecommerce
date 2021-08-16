@@ -85,8 +85,7 @@
     .product-line {
         padding: 20px 30px;
         h2 {
-            max-width: 1400px;
-            margin: auto;
+            font-weight: 800;
         }
     .product-line-flex {
         display: flex;
@@ -106,6 +105,20 @@
 }
 .zoom-img {
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+.product-line-headericon {
+    display: flex;
+    flex-flow: column;
+    max-width: 1400px;
+    align-items: flex-start;
+    margin: 20px auto auto auto;
+    .MuiSvgIcon-root {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    h2 {
+        margin-right: 20px;
+    }
 }
 
 }
@@ -151,7 +164,7 @@
     }
     .pdctdetails {
     .product-line {
-        padding: 0 !important;
+        padding: 20px !important;
         .productcard {
             width: 260px !important;
             margin-right: 24px;

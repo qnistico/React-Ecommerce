@@ -12,10 +12,13 @@ import SingleRowItem from "./SingleRowItem";
 import "./Sass/RowItems.scss";
 import { useHistory } from "react-router-dom";
 import Product from "./Product";
+import ForwardIcon from '@material-ui/icons/Forward';
+
 const RowItems = ({ products, onAddToCart }) => {
   return (
     <div className="row-items">
       <h2>View Our Products</h2>
+      
       <div className="product-line">
       <div className="product-line-flex">
       {products.map((product) => (

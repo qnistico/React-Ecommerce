@@ -13,10 +13,11 @@ import StarHalfIcon from "@material-ui/icons/StarHalf";
 import WhatshotIcon from "@material-ui/icons/Whatshot";
 import ReactImageMagnify from "react-image-magnify";
 import Product from "./Product";
+import ForwardIcon from '@material-ui/icons/Forward';
 
 import { useLocation } from "react-router-dom";
 
-function ProductDetails({ product, products, onAddToCart }) {
+function ProductDetails({ products, onAddToCart, item, onUpdateCartQty }) {
   let location = useLocation();
   const [pdctItem, setPdctItem] = useState();
   const [pdctId, setPdctId] = useState("");
@@ -86,6 +87,23 @@ function ProductDetails({ product, products, onAddToCart }) {
               dangerouslySetInnerHTML={{ __html: pdctItem?.description }}
             ></p>
           </div>
+          <div className="cartitem-plusminus-buttons">
+              <button
+                type="button"
+                className="minus-button"
+                onClick={() => onUpdateCartQty(item.id, item.quantity - 1)}
+              >
+                -
+              </button>
+              <div>{item.quantity}</div>
+              <button
+                type="button"
+                className="plus-button"
+                onClick={() => onUpdateCartQty(item.id, item.quantity + 1)}
+              >
+                +
+              </button>
+            </div>
           <div className="pdctdetails-add">
             <button
               className="add-to-cart"
@@ -98,7 +116,11 @@ function ProductDetails({ product, products, onAddToCart }) {
         </div>
       </div>
       <div className="product-line">
+        <div className="product-line-headericon">
         <h2>Related Products</h2>
+        <ForwardIcon />
+        </div>
+
         <div className="product-line-flex">
           {products.map((product) => (
             <div className="product-card" key={product.id}>
@@ -106,6 +128,7 @@ function ProductDetails({ product, products, onAddToCart }) {
             </div>
           ))}
         </div>
+        
       </div>
     </div>
   );

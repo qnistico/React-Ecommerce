@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { CssBaseline } from '@material-ui/core';
+import { CssBaseline } from "@material-ui/core";
 
 import { commerce } from "./Library/commerce";
 import "./App.scss";
@@ -20,7 +20,7 @@ const App = () => {
   const [categories, setCategories] = useState([]);
   const [cart, setCart] = useState({});
   const [order, setOrder] = useState({});
-  const [errorMessage, setErrorMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState("");
 
   const fetchProducts = async () => {
     const { data } = await commerce.products.list();
@@ -70,7 +70,10 @@ const App = () => {
 
   const handleCaptureCheckout = async (checkoutTokenId, newOrder) => {
     try {
-      const incomingOrder = await commerce.checkout.capture(checkoutTokenId, newOrder);
+      const incomingOrder = await commerce.checkout.capture(
+        checkoutTokenId,
+        newOrder
+      );
 
       setOrder(incomingOrder);
 
@@ -110,10 +113,19 @@ const App = () => {
             />
           </Route>
           <Route exact path="/ProductDetails">
-            <ProductDetails products={products} onAddToCart={handleAddToCart} />
+            <ProductDetails
+              products={products}
+              onAddToCart={handleAddToCart}
+              handleUpdateCartQty={handleUpdateCartQty}
+            />
           </Route>
           <Route exact path="/Checkout">
-          <Checkout cart={cart} order={order} onCaptureCheckout={handleCaptureCheckout} error={errorMessage} />
+            <Checkout
+              cart={cart}
+              order={order}
+              onCaptureCheckout={handleCaptureCheckout}
+              error={errorMessage}
+            />
           </Route>
           <Route exact path="/category/:category_id">
             <Categories products={products} categories={categories} />
