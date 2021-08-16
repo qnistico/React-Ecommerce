@@ -17,17 +17,23 @@ import ForwardIcon from '@material-ui/icons/Forward';
 
 import { useLocation } from "react-router-dom";
 
-function ProductDetails({ products, onAddToCart, item, onUpdateCartQty }) {
+function ProductDetails({ products, onAddToCart, items, onUpdateCartQty }) {
   let location = useLocation();
   const [pdctItem, setPdctItem] = useState();
   const [pdctId, setPdctId] = useState("");
+  const [currLineItem, setCurrLineItem] = useState('');
+
 
   useEffect(() => {
     const tempPdctId = new URLSearchParams(location.search).get("id");
     setPdctId(tempPdctId);
     const tempPdct = products.find((pdct) => pdct.id === tempPdctId);
     setPdctItem(tempPdct);
-  }, [location, products]);
+    if(items && items.length > 0){
+      setCurrLineItem(items.find(i => i.product_id === tempPdctId));
+    }
+
+  }, [location, products, items]);
 
   return (
     <div className="pdctdetails">
@@ -91,15 +97,16 @@ function ProductDetails({ products, onAddToCart, item, onUpdateCartQty }) {
               <button
                 type="button"
                 className="minus-button"
-                onClick={() => onUpdateCartQty(item.id, item.quantity - 1)}
+                onClick={() => onUpdateCartQty(pdctId, 'remove')}
+                disabled={!currLineItem}
               >
                 -
               </button>
-              <div>{item.quantity}</div>
+              <div>{currLineItem ? currLineItem.quantity : 1}</div>
               <button
                 type="button"
                 className="plus-button"
-                onClick={() => onUpdateCartQty(item.id, item.quantity + 1)}
+                onClick={() => onUpdateCartQty(pdctId, 'add')}
               >
                 +
               </button>
@@ -107,7 +114,7 @@ function ProductDetails({ products, onAddToCart, item, onUpdateCartQty }) {
           <div className="pdctdetails-add">
             <button
               className="add-to-cart"
-              onClick={() => onAddToCart(pdctItem?.id, 1)}
+              onClick={() => onAddToCart(pdctId?.id, 1)}
             >
               Add to Cart
             </button>
