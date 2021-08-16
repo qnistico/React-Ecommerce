@@ -41,8 +41,9 @@ function ProductDetails({ products, onAddToCart, items, onUpdateCartQty }) {
     if(updatedQty < 1){
       updatedQty = 1
     }
-      setCurrQty(updatedQty);
-  }
+    setCurrQty(updatedQty);
+}
+
 
   return (
     <div className="pdctdetails">
