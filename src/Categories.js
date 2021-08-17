@@ -1,6 +1,7 @@
 import React from "react";
 import Product from "./Product";
 import { useParams } from "react-router";
+import { Helmet } from "react-helmet";
 
 const Categories = ({ categories, products, onAddToCart }) => {
   
@@ -18,6 +19,14 @@ const Categories = ({ categories, products, onAddToCart }) => {
 
   console.log(categories);
   return <div className="categories-flex">
+    <Helmet>
+        <title>Product Category | EZStore Ecommerce</title>
+        <meta
+          name="description"
+          content="EZStore Ecommerce product category"
+        />
+        
+      </Helmet>
       {getProductsByCategory().map((product) => (
       <div className="product-card category-productcard" key={product.id}>
           <Product product={product} onAddToCart={onAddToCart} />

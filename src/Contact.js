@@ -11,6 +11,7 @@ function Contact() {
       <div className="contact-flex">
         <div className="contact-left">
           <h2>Have something to tell us?</h2>
+          <hr />
           <h3>Contact Information</h3>
           <ul>
             <li><LocationOnOutlinedIcon /> Lorem, Lorem 12345, USA</li>

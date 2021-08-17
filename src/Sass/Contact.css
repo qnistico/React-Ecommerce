@@ -62,6 +62,10 @@
   margin-top: 20px;
 }
 
+.contact .contact-flex .contact-left hr {
+  margin-top: 20px;
+}
+
 .contact .contact-flex .contactform {
   width: 500px;
   background-color: #fff;
@@ -171,6 +175,10 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .contact-flex .contact-left hr {
+    width: 62%;
+    margin: auto;
   }
   .contact-flex .contactform {
     width: 100% !important;

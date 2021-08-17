@@ -98,8 +98,11 @@ footer .footer-flex .footer-item p {
 }
 
 footer .footer-flex .footer-item ul li {
+  font-size: 14px;
   list-style-type: none;
   line-height: 2;
+  color: #333;
+  cursor: pointer;
 }
 
 footer .footer-flex .footer-item ul li a {

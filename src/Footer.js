@@ -1,6 +1,7 @@
 import React from "react";
 import "./Sass/Footer.scss";
 import Socialmediaicons from "./SocialMediaIcons";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -27,18 +28,30 @@ function Footer() {
           <h3>Shop</h3>
           <ul className="footer-item-padding">
             <li>
-              <a href="#!">Laptops</a>
+              <Link to="/category/cat_RqEv5xnGewZz4j">
+              Sound & Audio
+              </Link>
             </li>
             <li>
-              <a href="#!">Mobile Phones</a>
+              <Link to="/category/cat_LvJjoPb3Ele0nO">
+              Computers & Monitors
+              </Link>
             </li>
             <li>
-              <a href="#!">Keyboards</a>
+              <Link to="category/cat_8XxzoBz1NoPQAZ">
+              Mice & Keyboards
+              </Link>
             </li>
             <li>
-              <a href="#!">Headphones</a>
+              <Link to="category/cat_VKXmwDejDorgDA">
+              Tablets & Phones
+              </Link>
             </li>
-            <li><a href="#!">Desk Appliances</a></li>
+            <li>
+              <Link to="category/cat_eN1ql9G8Yoz3ym">
+              Accessories & Lighting
+              </Link>
+              </li>
           </ul>
         </div>
         <div className="footer-item footer-customerservice">
@@ -81,16 +94,14 @@ function Footer() {
         
       </div>
       <div className="creditcards">
-        <a href="http://www.credit-card-logos.com/">
           <img
             alt="Credit Card Logos"
             title="Credit Card Logos"
-            src="http://www.credit-card-logos.com/images/multiple_credit-card-logos-1/credit_card_logos_10.gif"
+            src="https://www.credit-card-logos.com/images/multiple_credit-card-logos-1/credit_card_logos_10.gif"
             width="336"
             height="50"
             border="0"
           />
-        </a>
       </div>
       <div className="footer-bottom">
         <div className="footer-bottom-flex">

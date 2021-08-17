@@ -37,6 +37,9 @@
                 font-weight: 800;
                 margin-top: 20px;
             }
+            hr {
+                margin-top: 20px;
+            }
         }
         .contactform {
             width: 500px;
@@ -113,6 +116,10 @@
             text-align: center;
             ul li {
                 justify-content: center;
+            }
+            hr {
+                width: 62%;
+                margin: auto;
             }
         }
         .contactform {

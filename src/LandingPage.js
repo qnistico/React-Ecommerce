@@ -11,6 +11,7 @@ import Footer from './Footer';
 import WhyShopBanner from './WhyShopBanner';
 import ShopCategory from './ShopCategory';
 import Contact from './Contact';
+import { Helmet } from "react-helmet";
 
 
 
@@ -46,7 +47,19 @@ function LandingPage({ onAddToCart, products }) {
   }, []);
 
     return (
+      
         <div className="landing-page">
+          <Helmet>
+        <title>EZStore Ecommerce</title>
+        <meta
+          name="description"
+          content="High quality technology products sold at fair prices."
+        />
+        <meta
+          name="keywords"
+          content="Technology, Products, Technology Products, Fair Prices, Ecommerce"
+        />
+      </Helmet>
             <Hero />
             <RowItems products={products} onAddToCart={onAddToCart} />
             <BannerProductOne />

@@ -11,11 +11,20 @@ import mouse1 from "./img/mouse1.jpg";
 import mouse2 from "./img/mouse2.jpg";
 import SingleRowItem from "./SingleRowItem";
 import "./Sass/AllProducts.scss";
+import { Helmet } from "react-helmet";
 
 const AllProducts = ({ products, onAddToCart }) => {
   console.log(products);
   return (
     <div className="row-items all-products">
+      <Helmet>
+        <title>All Products | EZStore Ecommerce</title>
+        <meta
+          name="description"
+          content="All products from EZStore"
+        />
+        
+      </Helmet>
       <h2>View Our Products</h2>
       <div className="product-line">
       <div className="product-line-flex">

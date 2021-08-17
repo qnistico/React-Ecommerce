@@ -2,6 +2,7 @@ import React from "react";
 import CartItem from "./CartItem";
 import "./Sass/Cart.scss";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const Cart = ({
   cart,
@@ -9,6 +10,7 @@ const Cart = ({
   handleRemoveFromCart,
   handleEmptyCart,
 }) => {
+  
   const EmptyCart = () => (
     <div>
       <p className="no-items-cart">No items in cart.</p>
@@ -17,6 +19,14 @@ const Cart = ({
   );
   const CartAdded = () => (
     <>
+    <Helmet>
+        <title>Cart | EZStore Ecommerce</title>
+        <meta
+          name="description"
+          content="EZStore Ecommerce product cart"
+        />
+        
+      </Helmet>
       <div className="cartflex">
         {cart.line_items.map((item) => (
           <div key={item.id}>

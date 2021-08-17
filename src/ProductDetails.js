@@ -16,6 +16,7 @@ import Product from "./Product";
 import ForwardIcon from '@material-ui/icons/Forward';
 
 import { useLocation } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 function ProductDetails({ products, onAddToCart, items, onUpdateCartQty }) {
   let location = useLocation();
@@ -47,6 +48,14 @@ function ProductDetails({ products, onAddToCart, items, onUpdateCartQty }) {
 
   return (
     <div className="pdctdetails">
+      <Helmet>
+        <title>Product Details | EZStore Ecommerce</title>
+        <meta
+          name="description"
+          content="Product details for EZStore Ecommerce"
+        />
+        
+      </Helmet>
       <div className="pdctdetails-flex">
         <div className="img-container">
           <ReactImageMagnify
