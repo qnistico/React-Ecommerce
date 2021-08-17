@@ -25,6 +25,34 @@ a {
   font-family: 'Roboto', sans-serif;
 }
 
+ul li {
+  font-family: 'Roboto', sans-serif;
+}
+
+label {
+  font-family: 'Roboto', sans-serif;
+}
+
+button, input, select, textarea {
+  font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-input-placeholder {
+  font-family: 'Roboto', sans-serif;
+}
+
+:-moz-placeholder {
+  font-family: 'Roboto', sans-serif;
+}
+
+::-moz-placeholder {
+  font-family: 'Roboto', sans-serif;
+}
+
+:-ms-input-placeholder {
+  font-family: 'Roboto', sans-serif;
+}
+
 .hero-button {
   width: 156px;
   padding: 12px 20px;

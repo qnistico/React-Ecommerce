@@ -10,6 +10,7 @@ import MobileBanner from './MobileBanner';
 import Footer from './Footer';
 import WhyShopBanner from './WhyShopBanner';
 import ShopCategory from './ShopCategory';
+import Contact from './Contact';
 
 
 
@@ -54,6 +55,7 @@ function LandingPage({ onAddToCart, products }) {
             <CardDouble />
             <WhyShopBanner />
             <MobileBanner />
+            <Contact />
         </div>
     )
 }

@@ -81,20 +81,27 @@
                         border: 1px solid #d1d1d1;
                         margin: 8px;
                     }
+                    .minus-button {
+                        margin-left: 0;
+
+                    }
                     
                 }
                 .add-to-cart {
                     padding: 12px 20px;
                     background-color: #3f51b5;
                     color: #fff;
-                    border: 1px solid #3f51b5;
+                    border: 2px solid #3f51b5;
                     font-weight: 700;
                     transition: all 0.3s ease;
                     border-radius: 100px;
                     min-width: 200px;
+                    margin-left: 40px;
+                    margin-bottom: 0;
                 }
                 .add-to-cart:hover {
-                    background-color: #303f9f;
+                    background-color: transparent;
+                    color: #333;
                 }
             }
         }
@@ -147,6 +154,13 @@
         }
         .pdctdetails-flex {
             flex-flow: column;
+        }
+        .pdctdetails-add {
+            flex-flow: column;
+            align-items: flex-start;
+            .add-to-cart {
+                margin: 20px 0 0 0 !important;
+            }
         }
     }
     .stars {

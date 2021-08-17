@@ -129,20 +129,27 @@
   margin: 8px;
 }
 
+.pdctdetails .pdctdetails-flex .pdctdetails-content .pdctdetails-add .cartitem-plusminus-buttons .minus-button {
+  margin-left: 0;
+}
+
 .pdctdetails .pdctdetails-flex .pdctdetails-content .pdctdetails-add .add-to-cart {
   padding: 12px 20px;
   background-color: #3f51b5;
   color: #fff;
-  border: 1px solid #3f51b5;
+  border: 2px solid #3f51b5;
   font-weight: 700;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   border-radius: 100px;
   min-width: 200px;
+  margin-left: 40px;
+  margin-bottom: 0;
 }
 
 .pdctdetails .pdctdetails-flex .pdctdetails-content .pdctdetails-add .add-to-cart:hover {
-  background-color: #303f9f;
+  background-color: transparent;
+  color: #333;
 }
 
 .pdctdetails .product-line {
@@ -213,6 +220,18 @@
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
+  }
+  .pdctdetails .pdctdetails-add {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .pdctdetails .pdctdetails-add .add-to-cart {
+    margin: 20px 0 0 0 !important;
   }
   .stars {
     -webkit-box-orient: vertical;
