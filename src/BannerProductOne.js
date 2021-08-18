@@ -14,7 +14,7 @@ function BannerProductOne() {
                 <h2>Macbook laptop Lorem</h2>
                 <button className="hero-button" onClick={() => history.push("/ProductDetails?id=prod_aZWNoyY2W2o80J")}>View</button>
             </div>
-            <img src={laptop1} alt="" />
+            <img src={laptop1} alt="macbook laptop" />
             
             </div>
         </div>

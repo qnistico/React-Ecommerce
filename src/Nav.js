@@ -68,8 +68,8 @@ function Nav({ totalItems }) {
       */}
         <nav className="navbar" id="navbar">
           <div className="nav-container">
-            <a href="/">
-              <img src={logo} alt="" className="nav-logo" />
+            <a href="/" aria-label="logo">
+              <img src={logo} alt="logo" className="nav-logo" />
             </a>
             
             <ul className={click ? "nav-menu active" : "nav-menu"}>

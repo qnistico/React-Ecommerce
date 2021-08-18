@@ -55,7 +55,7 @@ function Hero() {
   return (
     <div className="hero-responsive-header">
       <div className="hero-text mobileshow">
-          <p>Get up to 50% off on all products this this weekend!</p>
+          <p>Get up to 50% off on all products this weekend!</p>
           <h1>Quality Affordable Technology</h1>
           <Link to="/AllProducts">
             <button className="hero-button">View All Products</button>
@@ -64,7 +64,7 @@ function Hero() {
     <div className="hero">
       <div className="hero-flex">
         <div className="hero-text mobilehide">
-          <p>Get up to 50% off on all products this this weekend!</p>
+          <p>Get up to 50% off on all products this weekend!</p>
           <h1>Quality Affordable Technology</h1>
           <Link to="/AllProducts">
             <button className="hero-button">View All Products</button>
@@ -73,7 +73,7 @@ function Hero() {
         
         <img
           src={heroimgnobg}
-          alt=""
+          alt="woman holding phone with headphones"
           className="parallaxify"
           data-speed-multiplier="-1.618"
         />

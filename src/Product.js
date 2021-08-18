@@ -17,7 +17,7 @@ const Product = ({ product, onAddToCart }) => {
           <div className="productcard-overlay">For Sale</div>
           <img
             src={product.media.source}
-            alt=""
+            alt={product.alt}
             onClick={() => history.push(`/ProductDetails?id=${product?.id}`)}
           />
         </div>

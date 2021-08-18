@@ -18,7 +18,7 @@ function CardDouble(props) {
             scspan="Apple iPad"
             sch3="Mobile Convenience"
             scimg={tablet1}
-            scalt="speaker"
+            scalt="iPad tablet"
             sclink="/ProductDetails?id=prod_RyWOwmdnyGlnEa"
           />
         </div>
@@ -28,7 +28,7 @@ function CardDouble(props) {
             scspan="Desk Speakers"
             sch3="Excellent sound"
             scimg={speaker3}
-            scalt="speaker"
+            scalt="audio speaker"
             sclink="/ProductDetails?id=prod_Kvg9l6A2qb51bB"
           />
         </div>
@@ -39,7 +39,7 @@ function CardDouble(props) {
           scspan="Computer Parts "
           sch3="Mice & Keyboards"
           scimg={mouse1}
-          scalt="speaker"
+          scalt="computer mouse"
           sclink="/ProductDetails?id=prod_p6dP5g0BPkln7k"
         />
         </div>

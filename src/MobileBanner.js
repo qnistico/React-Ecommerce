@@ -14,8 +14,8 @@ function MobileBanner() {
             <button className="hero-button">Shop Now</button>
             </Link>
         </div>
-        <img src={mobileoverlay} alt="" className="mobilephone-img mobilehide" />
-        <img src={mobilephone} alt="" className="mobileshow" />
+        <img src={mobileoverlay} alt="mobile phone" className="mobilephone-img mobilehide" />
+        <img src={mobilephone} alt="mobile phone" className="mobileshow" />
       </div>
     </div>
   );
