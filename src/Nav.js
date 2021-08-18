@@ -8,6 +8,7 @@ import QueryBuilderIcon from "@material-ui/icons/QueryBuilder";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import logo from "./img/logo.png";
+import CustomizedMenus from "./CustomizedMenus";
 
 function Nav({ totalItems }) {
   const [click, setClick] = useState(false);
@@ -78,22 +79,12 @@ function Nav({ totalItems }) {
                   All Products
                 </a>
               </li>
+              
               <li className="nav-item">
-                <a href="/AboutPage" className="nav-links">
-                  About
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="/Gallery" className="nav-links">
-                  Gallery
-                </a>
+                <CustomizedMenus />
               </li>
 
-              <li className="nav-item">
-                <a href="/#chefs" className="nav-links">
-                  Chefs
-                </a>
-              </li>
+              
               <li className="nav-item">
                 <a href="/ContactPage" className="nav-links">
                   Contact Us
@@ -101,13 +92,11 @@ function Nav({ totalItems }) {
               </li>
             </ul>
 
-            <ul className="nav-menu-2 mobilehide">
+            <ul className="nav-menu-2 mobilehide" aria-label="cart">
               <Link to="/Cart">
-                <li className="nav-item">
-                  <div className="nav-cart">
+                <li className="nav-item nav-cart">
                     <ShoppingCartIcon />
                     <div className="cart-badge">{totalItems}</div>
-                  </div>
                 </li>
               </Link>
             </ul>
@@ -118,12 +107,10 @@ function Nav({ totalItems }) {
             </div>
           </div>
           <Link to="/Cart">
-                <div className="nav-item mobileshow">
-                <div className="nav-links nav-cart">
+                <ul className="nav-item mobileshow nav-cart" aria-label="cart">
                   <ShoppingCartIcon />
                   <div className="cart-badge">{totalItems}</div>
-                </div>
-                </div>
+                </ul>
               </Link>
         </nav>
       </>

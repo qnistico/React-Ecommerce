@@ -81,10 +81,10 @@ function Footer() {
               <a href="#!">Lorem, Lorem 12345, USA</a>
             </li>
             <li>
-              <a href="#!">(610)-123-4567</a>
+              <a href="tel:123-123-4567">(123)-123-4567</a>
             </li>
             <li>
-              <a href="#!">(610)-123-4565</a>
+              <a href="tel:123-123-4565">(123)-123-4565</a>
             </li>
             <li>
               <a href="#!">example@gmail.com</a>

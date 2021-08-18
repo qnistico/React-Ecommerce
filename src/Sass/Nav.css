@@ -70,7 +70,7 @@
   top: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
-  z-index: 9999;
+  z-index: 500;
   margin: auto;
 }
 
@@ -99,7 +99,7 @@
           align-items: center;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
+  margin-right: 40px;
   width: 175px;
   cursor: pointer;
 }
@@ -297,11 +297,6 @@
   height: 100%;
 }
 
-.dropdown_content {
-  z-index: 9999 !important;
-  position: relative;
-}
-
 .menu {
   background: #ffffff;
   border-radius: 0;
@@ -342,6 +337,18 @@
   visibility: visible;
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+.MuiList-root {
+  z-index: 9999 !important;
+}
+
+.dropdown-button {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  text-transform: none !important;
+  color: #333 !important;
+  letter-spacing: 0 !important;
 }
 
 @media screen and (max-width: 900px) {
