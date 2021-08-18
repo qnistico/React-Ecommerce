@@ -61,7 +61,6 @@ function ProductDetails({ products, onAddToCart, items, onUpdateCartQty }) {
           <ReactImageMagnify
             fadeDurationInMs="0"
             hoverDelayInMs="0"
-            alt=""
             shouldUsePositiveSpaceLens="true"
             enlargedImageContainerClassName="zoom-img"
             enlargedImagePosition="over"
@@ -69,11 +68,13 @@ function ProductDetails({ products, onAddToCart, items, onUpdateCartQty }) {
               smallImage: {
                 isFluidWidth: true,
                 src: pdctItem?.media.source,
+                alt:""
               },
               largeImage: {
                 src: pdctItem?.media.source,
                 width: 1200,
                 height: 1200,
+                alt:""
               },
             }}
           />

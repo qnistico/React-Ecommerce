@@ -5,10 +5,12 @@
         display: flex;
         justify-content: space-between;
         max-width: 1400px;
+        padding: 0 20px;
         margin: auto;
         .contact-left {
             display: flex;
             flex-flow: column;
+            margin-right: 15px;
             width: 50%;
             h2 {
                 font-size: 28px;
@@ -42,7 +44,8 @@
             }
         }
         .contactform {
-            width: 500px;
+            width: 650px;
+            margin-left: 15px;
             background-color: #fff;
             box-shadow: 0 0 40px 0 rgba(7, 152, 255,  0.2);
             display: flex;
@@ -111,9 +114,11 @@
     .contact-flex {
         flex-flow: column;
         align-items: center;
+        padding: 0 !important;
         .contact-left {
             width: 100% !important;
             text-align: center;
+            margin: 0 !important;
             ul li {
                 justify-content: center;
             }
@@ -124,6 +129,7 @@
         }
         .contactform {
             width: 100% !important;
+            margin: 0 !important;
         }
     }
 }
