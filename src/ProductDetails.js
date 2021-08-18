@@ -61,6 +61,7 @@ function ProductDetails({ products, onAddToCart, items, onUpdateCartQty }) {
           <ReactImageMagnify
             fadeDurationInMs="0"
             hoverDelayInMs="0"
+            alt=""
             shouldUsePositiveSpaceLens="true"
             enlargedImageContainerClassName="zoom-img"
             enlargedImagePosition="over"
