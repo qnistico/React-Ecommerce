@@ -91,9 +91,9 @@ function Nav({ totalItems }) {
                 </a>
               </li>
             </ul>
-            <Link to="/Cart">
+            <Link to="/Cart" title="show cart">
 
-            <div className="nav-menu-2 mobilehide" aria-label="cart">
+            <div className="nav-menu-2 mobilehide" >
                 <div className="nav-item nav-cart">
                     <ShoppingCartIcon />
                     <div className="cart-badge">{totalItems}</div>
@@ -105,9 +105,9 @@ function Nav({ totalItems }) {
               <MenuIcon />
             </div>
           </div>
-          <Link to="/Cart">
+          <Link to="/Cart" title="show cart">
 
-          <div className="nav-item mobileshow nav-cart" aria-label="cart">
+          <div className="nav-item mobileshow nav-cart">
                 <div>
                   <ShoppingCartIcon />
                   <div className="cart-badge">{totalItems}</div>
