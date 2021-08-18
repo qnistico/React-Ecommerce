@@ -107,8 +107,8 @@ function Nav({ totalItems }) {
           </div>
           <Link to="/Cart">
 
-          <div className="nav-item mobileshow nav-cart">
-                <div aria-label="cart">
+          <div className="nav-item mobileshow nav-cart" aria-label="cart">
+                <div>
                   <ShoppingCartIcon />
                   <div className="cart-badge">{totalItems}</div>
                 </div>
