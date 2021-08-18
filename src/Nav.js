@@ -106,12 +106,14 @@ function Nav({ totalItems }) {
               <MenuIcon />
             </div>
           </div>
+          <ul className="nav-item mobileshow nav-cart">
           <Link to="/Cart">
-                <ul className="nav-item mobileshow nav-cart" aria-label="cart">
+                <li aria-label="cart">
                   <ShoppingCartIcon />
                   <div className="cart-badge">{totalItems}</div>
-                </ul>
+                </li>
               </Link>
+              </ul>
         </nav>
       </>
     </div>

@@ -74,6 +74,10 @@
   margin: auto;
 }
 
+.navbar ul li {
+  list-style-type: none;
+}
+
 .nav-container {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -46,7 +46,10 @@
   top: 0;
   box-shadow: none;
   z-index: 500;
-  margin: auto;
+  margin: auto; 
+  ul li {
+    list-style-type: none;
+  }
 }
 
 .nav-container {
