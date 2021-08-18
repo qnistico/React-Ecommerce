@@ -91,29 +91,29 @@ function Nav({ totalItems }) {
                 </a>
               </li>
             </ul>
+            <Link to="/Cart">
 
-            <ul className="nav-menu-2 mobilehide" aria-label="cart">
-              <Link to="/Cart">
-                <li className="nav-item nav-cart">
+            <div className="nav-menu-2 mobilehide" aria-label="cart">
+                <div className="nav-item nav-cart">
                     <ShoppingCartIcon />
                     <div className="cart-badge">{totalItems}</div>
-                </li>
+                </div>
+            </div>
               </Link>
-            </ul>
-              
 
             <div className="nav-icon" onClick={handleClick}>
               <MenuIcon />
             </div>
           </div>
-          <ul className="nav-item mobileshow nav-cart">
           <Link to="/Cart">
-                <li aria-label="cart">
+
+          <div className="nav-item mobileshow nav-cart">
+                <div aria-label="cart">
                   <ShoppingCartIcon />
                   <div className="cart-badge">{totalItems}</div>
-                </li>
+                </div>
+              </div>
               </Link>
-              </ul>
         </nav>
       </>
     </div>
