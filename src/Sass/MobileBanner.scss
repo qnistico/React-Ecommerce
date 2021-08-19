@@ -19,8 +19,6 @@ padding: 0 40px 0 100px;
         min-width: 350px;
         display: flex;
         flex-flow: column;
-        text-align: center;
-        align-items: center;
         h2 {
             font-size: 48px;
             font-weight: 800;
@@ -70,6 +68,9 @@ padding: 0 40px 0 100px;
     .mobilebanner-flex {
         flex-flow: column;
         padding: 0;
+        .mobilebanner-content {
+            text-align: center;
+        }
         img {
             width: 750px;
             margin-right: 80px;

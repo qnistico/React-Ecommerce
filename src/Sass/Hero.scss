@@ -31,7 +31,6 @@
       align-items: center;
       margin: auto;
       max-width: 1400px;
-      text-align: center;
       
 
       img {
@@ -48,9 +47,18 @@
     }
   
 }
+.hero-button {
+  color: #f1f2f5;
+  border-color: #333;
+  background-color: #333;
+}
+.hero-button:hover {
+  background-color: transparent;
+  color: #333;
+}
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   .hero-responsive-header {
     margin-top: 60px;
     text-align: center;
@@ -88,7 +96,7 @@
 
 @media screen and (max-width: 1024px) {
   .hero {
-    max-height: 62vh;
+    max-height: 63vh;
   }
   .hero-text {
     margin-left: 20px !important;

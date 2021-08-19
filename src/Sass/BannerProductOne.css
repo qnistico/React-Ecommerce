@@ -45,7 +45,6 @@
 .bp-1 .bp-1-flex .bp-1-content {
   width: 40%;
   min-width: 500px;
-  text-align: center;
   padding: 0 20px;
 }
 
@@ -64,6 +63,13 @@
 .bp-1 .bp-1-flex .bp-1-content .hero-button {
   padding: 10px 40px;
   width: 156px;
+  background-color: #333;
+  color: #f1f2f5;
+}
+
+.bp-1 .bp-1-flex .bp-1-content .hero-button:hover {
+  background-color: transparent;
+  color: #333;
 }
 
 @media screen and (max-width: 1080px) {
@@ -79,6 +85,9 @@
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
+  }
+  .bp-1 .bp-1-flex .bp-1-content {
+    text-align: center;
   }
   .bp-1 .bp-1-flex img {
     width: 500px;

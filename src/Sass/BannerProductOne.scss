@@ -28,7 +28,6 @@
     .bp-1-content {
       width: 40%;
       min-width: 500px;
-      text-align: center;
       padding: 0 20px;
       h2 {
         font-size: 48px;
@@ -43,6 +42,12 @@
       .hero-button {
         padding: 10px 40px;
         width: 156px;
+        background-color: #333;
+        color: #f1f2f5;
+      }
+      .hero-button:hover {
+        background-color: transparent;
+        color: #333;
       }
     }
   }
@@ -57,6 +62,9 @@
     }
     .bp-1-flex {
       flex-flow: column;
+      .bp-1-content {
+        text-align: center;
+      }
       img {
         width: 500px;
         margin-top: 40px;
