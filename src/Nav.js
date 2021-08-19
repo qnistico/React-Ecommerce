@@ -86,7 +86,7 @@ function Nav({ totalItems }) {
 
               
               <li className="nav-item">
-                <a href="/ContactPage" className="nav-links">
+                <a href="/#contact" className="nav-links">
                   Contact Us
                 </a>
               </li>

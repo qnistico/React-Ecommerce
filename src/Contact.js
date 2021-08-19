@@ -7,7 +7,7 @@ import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 
 function Contact() {
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <div className="contact-flex">
         <div className="contact-left">
           <h2>Have something to tell us?</h2>

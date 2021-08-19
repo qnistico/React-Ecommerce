@@ -156,6 +156,10 @@
   color: #333;
 }
 
+#contact {
+  scroll-margin-top: 100px;
+}
+
 @media screen and (max-width: 1080px) {
   .contact {
     width: 90%;
