@@ -331,3 +331,21 @@
     padding-left: 10px;
   }
 }
+
+@media screen and (max-width: 420px) {
+  .nav-logo {
+    width: 150px;
+  }
+  .nav-cart {
+    margin-right: 0;
+    .MuiSvgIcon-root {
+      font-size: 28px;
+    }
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .nav-logo {
+    width: 140px;
+  }
+}
