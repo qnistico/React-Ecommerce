@@ -18,7 +18,7 @@ import ForwardIcon from '@material-ui/icons/Forward';
 import { useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
-function ProductDetails({ products, onAddToCart, items, onUpdateCartQty }) {
+function ProductDetails({ products, onAddToCart, items }) {
   let location = useLocation();
   const [pdctItem, setPdctItem] = useState();
   const [pdctId, setPdctId] = useState("");

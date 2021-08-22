@@ -44,27 +44,8 @@ const App = () => {
     setCart(item.cart);
   };
 
-  const handleUpdateCartQty = async (productId, operation) => {
-    const currLineItem = cart.line_items.find(i => i.product_id === productId);
-    let response;
-
-
-    if(currLineItem){
-      const {id, quantity} = currLineItem;
-      if(operation === 'add'){
-        response = await commerce.cart.update(id, {quantity: quantity + 1});
-
-      }else{
-        response = await commerce.cart.update(id, {quantity: quantity - 1});
-      }
-    }else{
-      if(operation === 'add'){
-        response = await commerce.cart.add(productId, 1);
-      }
-    }
-
-
-
+  const handleUpdateCartQty = async (productId, quantity) => {
+    const response = await commerce.cart.update(productId, {quantity});
     setCart(response.cart);
   };
 
@@ -135,7 +116,6 @@ const App = () => {
               products={products}
               items={cart.line_items}
               onAddToCart={handleAddToCart}
-              onUpdateCartQty={handleUpdateCartQty}
             />
           </Route>
           <Route exact path="/Checkout">
