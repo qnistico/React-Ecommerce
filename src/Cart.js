@@ -35,6 +35,8 @@ const Cart = ({
               onUpdateCartQty={handleUpdateCartQty}
               onRemoveFromCart={handleRemoveFromCart}
               name=""
+              items={cart.line_items}
+
             />
           </div>
         ))}

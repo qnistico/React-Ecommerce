@@ -134,7 +134,7 @@ function ProductDetails({ products, onAddToCart, items }) {
             </div>
             <button
               className="add-to-cart"
-              onClick={() => onAddToCart(pdctId, currQty)}
+                onClick={() => onAddToCart(pdctId, currQty)}
             >
               Add to Cart
             </button>
